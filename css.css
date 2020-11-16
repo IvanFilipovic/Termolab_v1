@@ -1,0 +1,87 @@
+body {
+    min-height: 100vh;
+}
+hr {
+    color: black;
+}
+.navbar{
+    background: linear-gradient(90deg, rgba(55,78,122,1) 0%, rgba(35,89,89,1) 100%);
+}
+#stil {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;    
+    display: inline-block;
+    padding: 5px 20px;
+    position: relative;
+}
+#stil:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: whitesmoke;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#stil:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+.jumbotron{
+    border-radius: 0%;
+    background-image: url(src/vjetroelektrana2.jpg);
+    background-position:center; 
+	background-repeat:no-repeat; 
+    background-size:cover; 
+    height: 550px;  
+}
+footer {
+    background: linear-gradient(90deg, rgba(55,78,122,1) 0%, rgba(35,89,89,1) 100%);
+}
+.border-5, .border-w-5 {
+    border-width: 5px
+}
+.border-white {
+    border: 1px solid transparent;
+    border-color: black;
+}
+em {
+    font-style: italic;
+}
+.font-weight-normal {
+    font-weight: 400 
+}
+.social-link {
+    color: #fff;
+    background: #ff3f3f;
+    display: block;
+    width: 40%;
+    transition: all 0.3s;
+}
+.social-link:hover, .social-link:focus {
+    color: white;
+    text-decoration: none;
+}
+.social-link .icon {
+    width: 4rem;
+    text-align: center;
+    margin-right: 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.social-linkedin {
+    background: #0077B5;
+}
+.social-linkedin:hover, .social-linkedin:focus {
+    background: #005582;
+}
+.breadcrumb-caret .breadcrumb-item+.breadcrumb-item::before {
+    content: '\f0da';
+    font-family: 'FontAwesome';
+}
+
+  
