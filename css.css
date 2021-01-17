@@ -1,5 +1,9 @@
+* {  
+    font-family: 'Open Sans', sans-serif;
+}
 body {
     min-height: 100vh;
+    
 }
 hr {
     color: black;
