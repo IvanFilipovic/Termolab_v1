@@ -20,7 +20,6 @@
 
     </head>
     <body>
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand"><img src="src/FSBlogo.png"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -30,33 +29,30 @@
                     <li class="nav-item active px-5 py-2">
                         <a class="nav-link" id="stil" href="index.html">TERMOLAB <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item px-5 py-2">
+                    <li class="nav-item text-center px-2 py-2">
                         <a class="nav-link" id="stil" href="djelatnici.html">Djelatnici</a>
                     </li>
-                    <li class="nav-item px-5 py-2">
-                        <a class="nav-link" id="stil" href="projekti.html">Projekti</a>
+                    <li class="nav-item text-center px-2 py-2">
+                        <a class="nav-link" id="stil" href="projekti.html">Projekti i Suradnja</a>
                     </li>
-                    <li class="nav-item px-5 py-2">
+                    <li class="nav-item text-center px-2 py-2">
+                      <a class="nav-link" id="stil" href="nastava.html">Nastava</a>
+                    </li>
+                    <li class="nav-item text-center px-2 py-2">
                         <a class="nav-link" id="stil" href="publikacije.html">Publikacije</a>
                     </li>
-                    <li class="nav-item px-5 py-2">
-                        <a class="nav-link" id="stil" href="nastava.html">Nastava</a>
-                    </li>
+                    <li class="nav-item text-center px-2 py-2">
+                      <a class="nav-link" id="stil" href="akreditacije.html">Akreditacije</a>
+                  </li>
                 </ul>
             </div>
-        </nav>
-
-
-        <div class="container py-5">
+          </nav>       
             
-            <div class="row mb-5">
-              <div class="col-lg-8 text-dark py-4 text-center mx-auto">
-                <h1 class="display-4">Zavod za termodinamiku, toplinsku i procesnu tehniku</h1>
-              </div>
-            </div>
-           
-            <div class="p-5 bg-white rounded shadow-lg mb-5">              
-                <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
+
+        <div class="container-fluid py-5">
+            <div class="row py-3">
+                <div class="col md-3 shadow-none">
+                <ul id="myTab" role="list-group" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
                     <li class="nav-item flex-sm-fill py-3">
                         <a id="home-tab" data-toggle="tab" href="#predmet1" role="tab" aria-controls="predmet1" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">GRADNJA APARATA</a>
                     </li>
@@ -65,9 +61,25 @@
                     </li>
                     <li class="nav-item flex-sm-fill py-3">
                         <a id="contact-tab" data-toggle="tab" href="#predmet3" role="tab" aria-controls="predmet3" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">KVANTITATIVNA INFRACRVENA TERMOGRAFIJA</a>
-                    </li> 
+                    </li>
+                    <li class="nav-item flex-sm-fill py-3">
+                        <a id="contact-tab" data-toggle="tab" href="#predmet4" role="tab" aria-controls="predmet4" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">OBNOVLJIVI IZVORI ENERGIJE</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill py-3">
+                        <a id="contact-tab" data-toggle="tab" href="#predmet5" role="tab" aria-controls="predmet5" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">laboratorijski rad</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill py-3">
+                        <a id="contact-tab" data-toggle="tab" href="#predmet6" role="tab" aria-controls="predmet5" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">energetsko certificiranje zgrada</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill py-3">
+                        <a id="contact-tab" data-toggle="tab" href="#predmet7" role="tab" aria-controls="predmet5" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">termotehnički pokus</a>
+                    </li>
                 </ul>
-                <div id="myTabContent" class="tab-content">
+                </div>
+
+                <div class="col-md-9 text-dark py-3 mx-auto">
+                <h3 class="text-center display-4">Zavod za termodinamiku, toplinsku i procesnu tehniku</h3>
+                    <div id="myTabContent" class="tab-content col-md-12">
                     <div id="predmet1" role="tabpanel" aria-labelledby="predmet1-tab" class="tab-pane fade px-4 py-5 show active">
                         <h5 class="text-muted py-2">Opis kolegija</h5>
                         <p class="text-muted">Aparati i tlačna oprema zauzimaju vrlo važno mjesto u procesnoj industriji i energetici. Od zagrijavanja mazuta, uguščivanja raznih otopina ili proizvodnje pare za grijanje prostorea ili pripremu potrošne tople vode, hlađenje transformatora potrebni su aparati pomoću koji će to biti moguće ostvariti. Kroz ovaj kolegij student se upoznaje sa spomenutim vrstama aparata odnosno, izmjenjivačima topline (shell & tube), kotlovima raznih snaga, zagrijačima zraka ili plina, hladnjacima ulja, kondenzatorima itd. </p>
@@ -75,7 +87,7 @@
                         <h5 class="text-muted py-2">Obavijesti</h5>
                         <p class="text-muted">Obavijesti o kolegiju</p>
                         <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="docs/Darknet - tehnički aspekti.docx" role="button" download>Materijali</a>
+                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/689pxwibojkx7nm/AADTaOwd-pH5WeXmarRbhoRYa?dl=0" role="button" download>Materijali</a>
                     </div>
                     <div id="predmet2" role="tabpanel" aria-labelledby="predmet2-tab" class="tab-pane fade px-4 py-5">
                         <h5 class="text-muted py-2">Opis kolegija</h5>
@@ -84,18 +96,55 @@
                         <h5 class="text-muted py-2">Obavijesti</h5>
                         <p class="text-muted">Obavijesti o kolegiju</p>
                         <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="docs/Darknet - tehnički aspekti.docx" role="button" download>Materijali</a>
+                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/us1d0nst3ubccfy/AAAu8-K80jAHxD9s4DAkUXZHa?dl=0" role="button" download>Materijali</a>
                     </div>
                     <div id="predmet3" role="tabpanel" aria-labelledby="predmet3-tab" class="tab-pane fade px-4 py-5">
                         <h5 class="text-muted py-2">Opis kolegija</h5>
-                        <p class="text-muted">LTermografija je beskontaktna metoda mjerenja temperature i njene raspodjele na pojedinim površinama objekata, te možemo reći da tako nastali zapis, predstavlja vizualizaciju temperaturnog polja.</p>
+                        <p class="text-muted">Termografija je beskontaktna metoda mjerenja temperature i njene raspodjele na pojedinim površinama objekata, te možemo reći da tako nastali zapis, predstavlja vizualizaciju temperaturnog polja.</p>
                         <p class="text-muted">Kroz ovaj kolegij studenti će se upoznati sa načelima rada termografije, detaljnije upoznavanje sa mehanizmima izmjene topline, posebno zračenjem. Također, kroz razne vježbe u sklopu ovog kolegija, studenti će se osposobiti za samostalni rad sa termokamerom, upoznavanjem bitnih parametara prilikom snimanja, provedba postupka samog snimanja kao i naknada analiza termograma uz pomoć odgovarajućeg softwarea.</p>
                         <h5 class="text-muted py-2">Obavijesti</h5>
                         <p class="text-muted">Obavijesti o kolegiju</p>
                         <h5 class="text-muted py-4">Materijali</h5>
                         <a class="btn btn-outline-dark" href="docs/Darknet - tehnički aspekti.docx" role="button" download>Materijali</a>
                     </div>
-                </div>         
+                    <div id="predmet4" role="tabpanel" aria-labelledby="predmet4-tab" class="tab-pane fade px-4 py-5">
+                        <h5 class="text-muted py-2">Opis kolegija</h5>
+                        <p class="text-muted">OIE tekst.</p>
+                        <p class="text-muted">OIE tekst.</p>
+                        <h5 class="text-muted py-2">Obavijesti</h5>
+                        <p class="text-muted">Obavijesti o kolegiju</p>
+                        <h5 class="text-muted py-4">Materijali</h5>
+                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/pzbmtgvb09ohxb4/AABjvlPEo8oVcosEs3_BRuvsa?dl=0" role="button" download>Materijali</a>
+                    </div>
+                    <div id="predmet5" role="tabpanel" aria-labelledby="predmet5-tab" class="tab-pane fade px-4 py-5">
+                        <h5 class="text-muted py-2">Opis kolegija</h5>
+                        <p class="text-muted">lab rad tekst.</p>
+                        <p class="text-muted">lab rad tekst.</p>
+                        <h5 class="text-muted py-2">Obavijesti</h5>
+                        <p class="text-muted">Obavijesti o kolegiju</p>
+                        <h5 class="text-muted py-4">Materijali</h5>
+                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
+                    </div>
+                    <div id="predmet6" role="tabpanel" aria-labelledby="predmet5-tab" class="tab-pane fade px-4 py-5">
+                        <h5 class="text-muted py-2">Opis kolegija</h5>
+                        <p class="text-muted">ECZ tekst.</p>
+                        <p class="text-muted">ECZ tekst.</p>
+                        <h5 class="text-muted py-2">Obavijesti</h5>
+                        <p class="text-muted">Obavijesti o kolegiju</p>
+                        <h5 class="text-muted py-4">Materijali</h5>
+                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
+                    </div>
+                    <div id="predmet7" role="tabpanel" aria-labelledby="predmet5-tab" class="tab-pane fade px-4 py-5">
+                        <h5 class="text-muted py-2">Opis kolegija</h5>
+                        <p class="text-muted">termotehnički pokus tekst.</p>
+                        <p class="text-muted">termotehnički pokus tekst.</p>
+                        <h5 class="text-muted py-2">Obavijesti</h5>
+                        <p class="text-muted">Obavijesti o kolegiju</p>
+                        <h5 class="text-muted py-4">Materijali</h5>
+                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
+                    </div>
+                </div>        
+              </div>
             </div>
         </div>
 
@@ -103,24 +152,24 @@
             <div class="container-fluid py-3">
                 <div class="row py-3">
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                  <p class="font-italic text-muted py-5">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."</p>
+                  <img class="mt-5" src="src/sveuc_grb_malo_novo2.png" object-fit="scale-down">
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h6 class="text-uppercase font-weight-bold mb-4">Adresa</h6>
                     <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><p class="text-muted">Sveučilište u Zagrebu</p></li>
-                    <li class="mb-2"><p class="text-muted">Fakultet strojarstva i brodogradnje</p></li>
-                    <li class="mb-2"><p class="text-muted">Ivana Lučića 5</p></li>
-                    <li class="mb-2"><p class="text-muted">10 000 Zagreb</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">Sveučilište u Zagrebu</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">Fakultet strojarstva i brodogradnje</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">Ivana Lučića 5</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">10 000 Zagreb</p></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                   <h6 class="text-uppercase font-weight-bold mb-4">Korisni linkovi</h6>
                   <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="https://www.fsb.unizg.hr/index.php?fsbonline" class="text-muted" target="blank">FSB</a></li>
-                    <li class="mb-2"><a href="https://www.srce.unizg.hr/isvu" class="text-muted" target="blank">ISVU</a></li>
-                    <li class="mb-2"><a href="https://www.isvu.hr/studomat/hr/prijava" class="text-muted" target="blank">Studomat</a></li>
-                    <li class="mb-2"><a href="https://www.bib.irb.hr/" class="text-muted" target="blank">CROSBI</a></li>
+                    <li class="mb-2"><a href="https://www.fsb.unizg.hr/index.php?fsbonline" style="color: honeydew;" target="blank">FSB</a></li>
+                    <li class="mb-2"><a href="https://www.srce.unizg.hr/isvu" style="color: honeydew;" target="blank">ISVU</a></li>
+                    <li class="mb-2"><a href="https://www.isvu.hr/studomat/hr/prijava" style="color: honeydew;" target="blank">Studomat</a></li>
+                    <li class="mb-2"><a href="https://www.bib.irb.hr/" style="color: honeydew;" target="blank">CROSBI</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
@@ -134,7 +183,7 @@
                                 <textarea class="form-control" id="exampleMessage" placeholder="Poruka"></textarea>
                             </fieldset>
                             <fieldset class="form-group text-xs-right">
-                                <button type="button" class="btn btn-secondary-outline btn-lg" id="up">Pošalji</button>
+                                <button style="color: honeydew;" type="button" class="btn btn-secondary-outline btn-lg" id="up">Pošalji</button>
                             </fieldset>
                         </form>
                     </div>

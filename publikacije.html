@@ -9,6 +9,7 @@
         <meta name="Author" content="CodeJuice">
         
         <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="radovi.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">   
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,8 +20,6 @@
 
     </head>
     <body>
-
-
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand"><img src="src/FSBlogo.png"></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -30,144 +29,138 @@
                 <li class="nav-item active px-5 py-2">
                     <a class="nav-link" id="stil" href="index.html">TERMOLAB <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item px-5 py-2">
+                <li class="nav-item text-center px-2 py-2">
                     <a class="nav-link" id="stil" href="djelatnici.html">Djelatnici</a>
                 </li>
-                <li class="nav-item px-5 py-2">
-                    <a class="nav-link" id="stil" href="projekti.html">Projekti</a>
+                <li class="nav-item text-center px-2 py-2">
+                    <a class="nav-link" id="stil" href="projekti.html">Projekti i Suradnja</a>
                 </li>
-                <li class="nav-item px-5 py-2">
+                <li class="nav-item text-center px-2 py-2">
+                  <a class="nav-link" id="stil" href="nastava.html">Nastava</a>
+                </li>
+                <li class="nav-item text-center px-2 py-2">
                     <a class="nav-link" id="stil" href="publikacije.html">Publikacije</a>
                 </li>
-                <li class="nav-item px-5 py-2">
-                    <a class="nav-link" id="stil" href="nastava.html">Nastava</a>
-                </li>
+                <li class="nav-item text-center px-2 py-2">
+                  <a class="nav-link" id="stil" href="akreditacije.html">Akreditacije</a>
+              </li>
             </ul>
         </div>
-      </nav>
+      </nav>  
 
       <div class="container-fluid">
-        <div class="py-5">
-            <div class="row">
-              <div class="col-lg-9 mx-auto">
-                <div class="card shadow mb-4">
-                  <div class="card-body shadow-lg p-5">
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html" class="text-uppercase">termolab</a></li>
-                        <li class="breadcrumb-item"><a href="publikacije.html" class="text-uppercase">publikacije</a></li>
-                        <li aria-current="page" class="breadcrumb-item active text-uppercase">Bitan čimbenik na putu hrvatskih proizvoda do zahtjevnih inozemnih tržišta</li>
-                      </ol>
-                    </nav>
-                    <h4 class="text-muted py-3">Bitan čimbenik na putu hrvatskih proizvoda do zahtjevnih inozemnih tržišta</h4>
-                    <h5 class="text-muted py-3">Autori</h5>
-                    <p class="text-muted">Horvat, Ivan ; Dović, Damir</p>
-                    <h5 class="text-muted py-3">Sažetak</h5>
-                    <p class="text-muted">Laboratorij za toplinu i toplinske uređaje Fakulteta strojarstva i brodogradnje Sveučilišta u Zagrebu ('Termolab') nalazi se u i​stočnoj zgradi FSB–a još od 1978. godine. Prostor površine 250 m2 prvenstveno je namijenjen za izvođenje vježbi studentima usmjerenja termotehnike i procesne tehnike te za izradu diplomskih i doktorskih radova. Po svojoj opremljenosti Laboratorij se može usporediti sa sličnim fakultetskim laboratorijima u inozemstvu. Jedna od njegovih aktivnosti je i ispitivanje i razvoje uređaja za grijanje prostora i pripremu potrošnje tople vode kod kojih se kao gorivo koristi biomasa. U tom smislu je iznimno važna novodobivena akreditacija Laboratorija prema HRN EN ISO/IEC 17 025 : 2007 za ispitivanje grijalica prostora, kamina i štednjaka na kruto gorivo, kojom je omogućena jednostavnija i brža certifikacija tih proizvoda hrvatskih proizvođača i njihovo stavljanje na tržište zemalja Europske unije. Isto tako, treba istaknuti i istraživačke aktivnosti Laboratorija u aktualnom području izgaranja biomase niske kvalitete (i cijene) u spomenutim uređajima, kao što su poljoprivredni ostaci, uz poštivanje strogih zahtjeva na emisije onečišćujućih tvari dimnim plinovima propisanim u zemljama EU-a.</p>
-                  </div>
-                </div>
+        <div class="row d-flex justify-content-center py-5">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="znanstveni-tab" data-toggle="tab" href="#znanstveni" role="tab" aria-controls="znanstveni" aria-selected="true">Znanstveni radovi</a>
+              <a class="nav-item nav-link" id="strucni-tab" data-toggle="tab" href="#strucni" role="tab" aria-controls="strucni" aria-selected="false">Stručni radovi</a>
+              <a class="nav-item nav-link" id="ostalo-tab" data-toggle="tab" href="#ostalo" role="tab" aria-controls="ostalo" aria-selected="false">Ostali radovi</a>
+            </div>
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="znanstveni" role="tabpanel" aria-labelledby="znanstveni-tab">
+              <div class="col-lg-8 shadow-lg py-5">
+              <h4>Naslov</h4>
+              <p class="py-3">Numerical and experimental approach for evaluation of thermal performances of a polymer solar collector</p>
+              <h6>Autori</h6>
+              <p class="py-3">Filipović, Petar ; Dović, Damir ; Ranilović, Borjan ; Horvat, Ivan</p>
+              <h6>Izvornik</h6>
+              <p class="py-3">Renewable and Sustainable Energy Reviews (1364-0321) 112 (2019); 127-139</p>
+              <h6>Abstract</h6>
+              <p class="text-justify py-3">This paper presents a novel 2D numerical and experimental approach which can be used to assess the thermal performances of a polymer solar collector as a part of the design process. Numerical simulations are performed using software package FLUENT. To simulate radiative heat transfer, different radiation models that are available within FLUENT are applied including the discrete ordinates (DO) and surface-to-surface (S2S) model. Solar incident radiation is taken into account as an energy source computed analytically or via ray tracing software or as an external beam which is a part of boundary condition in semi- transparent DO model. Different combinations of longwave and shortwave radiation modeling are tested, first on a segment of a typical flat plate collector. In the second step, these models are applied to the test box at different boundary conditions and materials. Numerical models are then applied to the geometry of polymer solar collector prototype to assess its thermal efficiency. Combination of longwave radiation computed with DO and S2S sub-model and solar incident radiation modeled analytically or via ray tracing software yields sufficiently accurate results on the all tested computational domains, thus any of them can be used to compute thermal efficiency of a polymer solar collector. On the other hand, when applying semi-transparent DO model with the solar incident radiation modeled by the external beam, the obtained results are unphysical. Present approach is a part of the research aimed at the development of a thermally efficient low-cost polymer solar collector running in a drain back system. The prototype will be then experimentally tested.</p>
               </div>
-            </div>
-        </div>
-      </div>
-<!--
-      <div class="container-fluid">
-        <div class="py-5">
-            <div class="row">
-              <div class="col-lg-9 mx-auto">
-                <div class="card shadow mb-4">
-                  <div class="card-body shadow-lg p-5">
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html" class="text-uppercase">termolab</a></li>
-                        <li class="breadcrumb-item"><a href="publikacije.html" class="text-uppercase">publikacije</a></li>
-                        <li aria-current="page" class="breadcrumb-item active text-uppercase">Publikacija 2</li>
-                      </ol>
-                    </nav>
-                    <h5 class="text-muted py-3">Default Publikacija</h5>
-                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="py-5">
-            <div class="row">
-              <div class="col-lg-9 mx-auto">
-                <div class="card shadow mb-4">
-                  <div class="card-body shadow-lg p-5">
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html" class="text-uppercase">termolab</a></li>
-                        <li class="breadcrumb-item"><a href="publikacije.html" class="text-uppercase">publikacije</a></li>
-                        <li aria-current="page" class="breadcrumb-item active text-uppercase">Publikacija 3</li>
-                      </ol>
-                    </nav>
-                    <h5 class="text-muted py-3">Default Publikacija</h5>
-                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                    <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    -->
-      <footer class="bg-white">
-        <div class="container-fluid py-3">
-            <div class="row py-3">
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-              <p class="font-italic text-muted py-5">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <h6 class="text-uppercase font-weight-bold mb-4">Adresa</h6>
-                <ul class="list-unstyled mb-0">
-                <li class="mb-2"><p class="text-muted">Sveučilište u Zagrebu</p></li>
-                <li class="mb-2"><p class="text-muted">Fakultet strojarstva i brodogradnje</p></li>
-                <li class="mb-2"><p class="text-muted">Ivana Lučića 5</p></li>
-                <li class="mb-2"><p class="text-muted">10 000 Zagreb</p></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-              <h6 class="text-uppercase font-weight-bold mb-4">Korisni linkovi</h6>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a href="https://www.fsb.unizg.hr/index.php?fsbonline" class="text-muted" target="blank">FSB</a></li>
-                <li class="mb-2"><a href="https://www.srce.unizg.hr/isvu" class="text-muted" target="blank">ISVU</a></li>
-                <li class="mb-2"><a href="https://www.isvu.hr/studomat/hr/prijava" class="text-muted" target="blank">Studomat</a></li>
-                <li class="mb-2"><a href="https://www.bib.irb.hr/" class="text-muted" target="blank">CROSBI</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <h6 class="text-uppercase font-weight-bold mb-4">Kontaktirajte nas</h6>
-                <div class="form-group">
-                    <form>
-                        <fieldset class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Unesite email">
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <textarea class="form-control" id="exampleMessage" placeholder="Poruka"></textarea>
-                        </fieldset>
-                        <fieldset class="form-group text-xs-right">
-                            <button type="button" class="btn btn-secondary-outline btn-lg" id="up">Pošalji</button>
-                        </fieldset>
-                    </form>
+              <div class="col-lg-8 shadow-lg py-5">
+                <h4 class="text-center py-3">Naslov</h4>
+                <p class="py-3">Combustion of Agricultural Biomass - Issues and Solutions </p>
+                <h6>Autori</h6>
+                <p class="py-3">Horvat, Ivan ; Dović, Damir </p>
+                <h6>Izvornik</h6>
+                <p class="py-3">Transactions of FAMENA (1333-1124) 42 (2018), SI-1; 75-86 </p>
+                <h6>Abstract</h6>
+                <p class="text-justify py-3">Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units. </p>
                 </div>
             </div>
+            <div class="tab-pane fade" id="strucni" role="tabpanel" aria-labelledby="strucni-tab">
+              <div class="col-lg-8 shadow-lg py-5">
+                <h4>Naslov</h4>
+                <p class="py-3">Numerical and experimental approach for evaluation of thermal performances of a polymer solar collector</p>
+                <h6>Autori</h6>
+                <p class="py-3">Filipović, Petar ; Dović, Damir ; Ranilović, Borjan ; Horvat, Ivan</p>
+                <h6>Izvornik</h6>
+                <p class="py-3">Renewable and Sustainable Energy Reviews (1364-0321) 112 (2019); 127-139</p>
+                <h6>Abstract</h6>
+                <p class="text-justify py-3">This paper presents a novel 2D numerical and experimental approach which can be used to assess the thermal performances of a polymer solar collector as a part of the design process. Numerical simulations are performed using software package FLUENT. To simulate radiative heat transfer, different radiation models that are available within FLUENT are applied including the discrete ordinates (DO) and surface-to-surface (S2S) model. Solar incident radiation is taken into account as an energy source computed analytically or via ray tracing software or as an external beam which is a part of boundary condition in semi- transparent DO model. Different combinations of longwave and shortwave radiation modeling are tested, first on a segment of a typical flat plate collector. In the second step, these models are applied to the test box at different boundary conditions and materials. Numerical models are then applied to the geometry of polymer solar collector prototype to assess its thermal efficiency. Combination of longwave radiation computed with DO and S2S sub-model and solar incident radiation modeled analytically or via ray tracing software yields sufficiently accurate results on the all tested computational domains, thus any of them can be used to compute thermal efficiency of a polymer solar collector. On the other hand, when applying semi-transparent DO model with the solar incident radiation modeled by the external beam, the obtained results are unphysical. Present approach is a part of the research aimed at the development of a thermally efficient low-cost polymer solar collector running in a drain back system. The prototype will be then experimentally tested.</p>
+                </div>
             </div>
-          
-        </div>
-        
-        <!-- Copyrights -->
-        <div class="bg-light">
-          <div class="container text-center">
-            <p class="text-muted mb-0">© <script>document.write(new Date().getFullYear())</script> TERMOLAB</p>
+            <div class="tab-pane fade" id="ostalo" role="tabpanel" aria-labelledby="ostalo-tab">
+              <div class="col-lg-8 shadow-lg py-5">
+                <h4>Naslov</h4>
+                <p class="py-3">Numerical and experimental approach for evaluation of thermal performances of a polymer solar collector</p>
+                <h6>Autori</h6>
+                <p class="py-3">Filipović, Petar ; Dović, Damir ; Ranilović, Borjan ; Horvat, Ivan</p>
+                <h6>Izvornik</h6>
+                <p class="py-3">Renewable and Sustainable Energy Reviews (1364-0321) 112 (2019); 127-139</p>
+                <h6>Abstract</h6>
+                <p class="text-justify py-3">This paper presents a novel 2D numerical and experimental approach which can be used to assess the thermal performances of a polymer solar collector as a part of the design process. Numerical simulations are performed using software package FLUENT. To simulate radiative heat transfer, different radiation models that are available within FLUENT are applied including the discrete ordinates (DO) and surface-to-surface (S2S) model. Solar incident radiation is taken into account as an energy source computed analytically or via ray tracing software or as an external beam which is a part of boundary condition in semi- transparent DO model. Different combinations of longwave and shortwave radiation modeling are tested, first on a segment of a typical flat plate collector. In the second step, these models are applied to the test box at different boundary conditions and materials. Numerical models are then applied to the geometry of polymer solar collector prototype to assess its thermal efficiency. Combination of longwave radiation computed with DO and S2S sub-model and solar incident radiation modeled analytically or via ray tracing software yields sufficiently accurate results on the all tested computational domains, thus any of them can be used to compute thermal efficiency of a polymer solar collector. On the other hand, when applying semi-transparent DO model with the solar incident radiation modeled by the external beam, the obtained results are unphysical. Present approach is a part of the research aimed at the development of a thermally efficient low-cost polymer solar collector running in a drain back system. The prototype will be then experimentally tested.</p>
+                </div>
+            </div>
           </div>
         </div>
-      </footer>
-      <!-- End -->
+      </div>
+
+
+      <footer class="bg-white">
+            <div class="container-fluid py-3">
+                <div class="row py-3">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                  <img class="mt-5" src="src/sveuc_grb_malo_novo2.png" object-fit="scale-down">
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Adresa</h6>
+                    <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><p style="color: honeydew;">Sveučilište u Zagrebu</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">Fakultet strojarstva i brodogradnje</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">Ivana Lučića 5</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">10 000 Zagreb</p></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                  <h6 class="text-uppercase font-weight-bold mb-4">Korisni linkovi</h6>
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="https://www.fsb.unizg.hr/index.php?fsbonline" style="color: honeydew;" target="blank">FSB</a></li>
+                    <li class="mb-2"><a href="https://www.srce.unizg.hr/isvu" style="color: honeydew;" target="blank">ISVU</a></li>
+                    <li class="mb-2"><a href="https://www.isvu.hr/studomat/hr/prijava" style="color: honeydew;" target="blank">Studomat</a></li>
+                    <li class="mb-2"><a href="https://www.bib.irb.hr/" style="color: honeydew;" target="blank">CROSBI</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Kontaktirajte nas</h6>
+                    <div class="form-group">
+                        <form>
+                            <fieldset class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Unesite email">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <textarea class="form-control" id="exampleMessage" placeholder="Poruka"></textarea>
+                            </fieldset>
+                            <fieldset class="form-group text-xs-right">
+                                <button style="color: honeydew;" type="button" class="btn btn-secondary-outline btn-lg" id="up">Pošalji</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                </div>
+              
+            </div>
+            
+            <!-- Copyrights -->
+            <div class="bg-light">
+              <div class="container text-center">
+                <p class="text-muted mb-0">© <script>document.write(new Date().getFullYear())</script> TERMOLAB</p>
+              </div>
+            </div>
+          </footer>
+          <!-- End -->
     </body>
 </html>
 </html>
