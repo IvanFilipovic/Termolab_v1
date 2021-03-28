@@ -16,7 +16,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <title>TermoLab</title>
-
+        <script>
+            $(document).ready(function(){ 
+              $("#myTab li:eq(0) a").tab('show'); // Pokazuje Prvi tab na otvranju stranice
+            });
+        </script>
+        <script>
+            $(document).ready(function(){ 
+              $("#myTab2 li:eq(0) a").tab('show');
+            });
+        </script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -28,74 +37,143 @@
                     <li class="nav-item active px-5 py-2">
                         <a class="nav-link" id="stil" href="index.html">TERMOLAB <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item px-5 py-2">
+                    <li class="nav-item text-center px-2 py-2">
                         <a class="nav-link" id="stil" href="djelatnici.html">Djelatnici</a>
                     </li>
-                    <li class="nav-item px-5 py-2">
+                    <li class="nav-item text-center px-2 py-2">
                         <a class="nav-link" id="stil" href="projekti.html">Projekti i Suradnja</a>
                     </li>
-                    <li class="nav-item px-5 py-2">
+                    <li class="nav-item text-center px-2 py-2">
                       <a class="nav-link" id="stil" href="nastava.html">Nastava</a>
                     </li>
-                    <li class="nav-item px-5 py-2">
+                    <li class="nav-item text-center px-2 py-2">
                         <a class="nav-link" id="stil" href="publikacije.html">Publikacije</a>
                     </li>
-                    <li class="nav-item px-5 py-2">
+                    <li class="nav-item text-center px-2 py-2">
                       <a class="nav-link" id="stil" href="akreditacije.html">Akreditacije</a>
                   </li>
                 </ul>
             </div>
-        </nav>
+          </nav>
 
 
         <div class="container-fluid">
-            <div class="py-5">
-                <div class="row">
-                    <div class="col-lg-9 mx-auto">
-                        <div class="card shadow mb-4">
-                        <div class="card-body shadow-lg p-5">
-                             <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html" class="text-uppercase">Termolab</a></li>
-                            <li class="breadcrumb-item"><a href="projekti.html" class="text-uppercase">Projekti</a></li>
-                            <li aria-current="page" class="breadcrumb-item active text-uppercase">Grijanje i klimatizacija</li>
-                            </ol>
-                            </nav>
-                            <img src="src/FSB.png" style="width: 80%; height: 300px; margin-left: auto; margin-right: auto; display: block;">
-                            <h5 class="text-muted text-center py-3">Grijanje i klimatizacija</h5>
-                            <p class="text-muted">I u području termotehnike, tj. grijanja, hlađenja, ventilacije i klimatizacije Laboratorij je u proteklih nekoliko godina zajedno s nekim od vodećih hrvatskih tvrtki iz tog područja ostvario mnoge zanimljive projekte. Za najpoznatijeg domaćeg proizvođača opreme za ventilaciju i klimatizaciju, tvrtku Klimaoprema iz Samobora još je 2018. godine proveden niz ispitivanja u sklopu razvoja podnih ventilokonvektora. Uz to, za njezin odjel KOER koji se bavi razvojem i proizvodnjom nove generacije hardverskih i softverskih rješenja u termotehnici provedena su opsežna ispitivanja u sklopu razvoja sobnog regulatora temperature za regulaciju ventilokonvektora i podnih konvektora.</p>
-                            <p class="text-muted">Za poznatog proizvođača klima-komora ProKlima, također iz Samobora, provedena su ispitivanja ‘model boxa’ u sklopu razvoja novih klima-komora, dok je za proizvođača radijatora Lipovica iz Popovače suradnja obuhvatila usporedna ispitivanja radijatora s ciljem unaprjeđenja postojećih modela. Važan vid suradnje s renomiranim domaćim proizvođačima termotehničke opreme (Centrometal, Senko, Poljostroj, Plamen, Klimaoprema, ProKlima) je i uspostava ispitnih linija u njihovim pogonima za ispitivanje novih proizvoda i edukacija ispitnog osoblja. To se do sada pokazalo ključnim čimbenikom u procesu razvoja proizvoda i nastupa na zahtjevnim stranim tržištima.</p>
-                        </div>
-                        </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-10 col-md-10 py-3">
+                    <ul class="nav nav-pills nav-justified" id="myTab">
+                        <li class="nav-item">
+                            <a href="#one" class="nav-link" data-toggle="tab">Znanstveni projekti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#two" class="nav-link" data-toggle="tab">Stručni projekti</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="one">
+                            <div class="row py-3 mt-3 shadow">
+                                <div class="col-lg-12 py-3">
+                                  <h4 class="mt-2 py-3 text-center"> CEN standard Certified Experts EU-wide qualification and training scheme based on EPBD mandated CEN standards</h4>
+                                  <img src="src/vakuumski_kol.png" class="img-fluid mx-auto d-block" object-fit="scale-down">
+                                  <p class="text-justify py-3">In order to reach the EU's energy and climate targets, a qualified building workforce is needed. Professionals need to be aware of new upcoming challenges: (e.g. nZEB, renewables, new state of art) and be trained on it. 
 
-                        <div class="card shadow mb-4">
-                            <div class="card-body shadow-lg p-5">
-                                 <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html" class="text-uppercase">Termolab</a></li>
-                                <li class="breadcrumb-item"><a href="projekti.html" class="text-uppercase">Projekti</a></li>
-                                <li aria-current="page" class="breadcrumb-item active text-uppercase">Industrija i zgradarstvo</li>
-                                </ol>
-                                </nav>
-                                <img src="src/fsb2020-2.jpg" style="width: 80%; height: 300px; margin-left: auto; margin-right: auto; display: block;">
-                                <h5 class="text-muted text-center py-3">Industrija i zgradarstvo</h5>
-                                <p class="text-muted">Projekti Laboratorija u području industrije i zgradarstva obuhvaćaju razna ispitivanja, procesna mjerenja, izradu studija i sl. Za tvrtku IMPRESA iz Samobora već gotovo dvadeset godina provode se godišnja umjeravanja osjetnika temperature i temperaturna mapiranja skladišta lijekova tvrtke Medical Intertrade diljem Hrvatske. U proizvodnim pogonima poznatog proizvođača staklene ambalaže Vetropack iz Huma na Sutli, s kojim Laboratorij surađuje više od 30 godina, provedena su procesna i mjerenja mikroklimatskih uvjeta, a izrađena je i studija strojarskih instalacija (sustava grijanja, hlađenja i ventilacije) hladne zone pogona. U poslovnim prostorima tvrtke KFK iz Rugvice još su 2018. godine provedena procesna mjerenja i energetski pregled, dok su za poznatu drvnu industriju Spačva iz Vinkovaca također provedena procesna mjerenja, a izrađena je i studija izvedivosti za utvrđivanje mogućnosti iskorištavanja otpadne topline.</p>
-                                <p class="text-muted">Za potrebe tvrtke AKD iz Zagreba, najpoznatije po tome što proizvodi osobne iskaznice, putovnice, vize, vozačke dozvole i druge zaštićene tiskovine i dokumente, u njezinim su prostorima provedena ispitivanja i analize sustava poboljšanja rada ventilacije i mikroklime, dok su za tvrtku City Plaza koja upravlja istoimenim poslovnim kompleksom u Zagrebu (nasuprot zgradi FSB-a) obavljena mjerenja sustava ventilacije i klimatizacije.</p>
-                            </div>
+                                    The objective of this proposal is to set up a large-scale qualification and training schemes to increase the skills of HVAC professionals related to the new upcoming challenges. HVAC professionals play an important role in energy efficiency, especially in renovation where HVAC systems are often replaced or upgraded first. 
+                                    
+                                    The proposed training schemes are based on CEN standards related to the EPBD and mandated by the European Commission. The standards were voted positively in January 2017. The new CEN standards offer innovative approaches and solutions including renewables, economical calculation (cost optimum) and measured energy . 
+                                    
+                                    To bring them into application, training is urgently needed. Several national calculation methodologies for energy performance of buildings are based on current CEN standards and they have to be replaced by new standards. 
+                                    
+                                    The proposal is focusing on increased skills of HVAC professionals with direct links to the EPBD and Ecodesign Directive (e.g. Lot1, Lot 2). CEN standards are also used for the common EU voluntary certification scheme requested in the EPBD. 
+                                    
+                                    The training scheme will be complemented by a qualification scheme. 
+                                    
+                                    It addresses strong market request, shown by the support of stakeholders of the whole building value chain. 
+                                    
+                                    Qualification and training based on European standards is an advantage for mutual recognition of qualifications and certifications schemes among different EU Member States. Standardisation is also key to create level playing field conditions for products European wide. 
+                                    
+                                    The consortium includes standard writers, HVAC professional association and professionals, public authority advisers, universities and is supported by actors of the whole building value chain.</p>
+                                    <p class="text-justify py-3">Program financiranja: Obzor 2020</p>
+                                    <p class="text-justify py-3">Ukupni proračun: 824.883,92 EUR </p>
+                                </div>                  
+                              </div>
                         </div>
-                        <div class="card shadow mb-4">
-                            <div class="card-body shadow-lg p-5">
-                                 <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html" class="text-uppercase">Termolab</a></li>
-                                <li class="breadcrumb-item"><a href="projekti.html" class="text-uppercase">Projekti</a></li>
-                                <li aria-current="page" class="breadcrumb-item active text-uppercase">Istraživački projekti i edukacije</li>
-                                </ol>
-                                </nav>
-                                <img src="src/fsb2020-3.jpg" style="width: 80%; height: 300px; margin-left: auto; margin-right: auto; display: block;">                                    
-                                <h5 class="text-muted text-center py-3">Default projekt </h5>
-                                <p class="text-muted">Osim suradnje s gospodarstvom, prof. Dović ističe i razne istraživačke i edukacijske projekte u suradnji s domaćim i međunarodnim organizacijama, poput suradnje s Tehničkim odborom Europske normizacijske organizacije CEN/TC228 ‘Sustavi grijanja u zgradama’ na projektu izrade normi za određivanje energetskih svojstava zgrade. Uspostava certifikacijske sheme za izobrazbu stručnjaka za proračun energetskih svojstava zgrada u sklopu provedbe Direktive o energetskoj učinkovitosti zgrada (EPBD) tema je projekta ‘CEN-CE EPB Standards Certified Experts’ iz programa ‘Obzor 2020’. Energetska svojstva zgrada tema je i dva projekta koji se upravo izvode u suradnji s Ministarstvom graditeljstva i prostornoga uređenja. Jedan je izrada dodatnih algoritama za proračun energetskih svojstva zgrade kao priprema za drugi projekt nadzora izrade računalnog programa za određivanje tih svojstava, koji bi trebao biti dovršen sljedeće godine.</p>
-                                <p class="text-muted">Djelatnici Laboratorija još od 2009. godine provode programe izobrazbe osoba koje se bave energetskim pregledima i energetskim certificiranjem zgrada te energetskim pregledima velikih poduzeća. U Laboratoriju se isto tako kontinuirano odvija izobrazba termografista u području primjene infracrvene termografije u zgradarstvu i industriji, u čemu je Laboratorij bio pionir još osamdesetih godina prošlog stoljeća u bivšoj državi. Također se organiziraju i seminari iz područja opreme pod tlakom koja se konstruira i ispituje u Laboratoriju. Od ostalih seminara valja izdvojiti i one za izobrazbu projektanata alternativnih sustava opskrbe energijom i instalatera termotehničke opreme (npr. solarnih sustava, uređaja na biomasu i dr.).</p>
+                        <div class="tab-pane fade" id="two">
+                            <div class="col-lg-12 py-3">
+                                <ul class="nav nav-pills nav-justified" id="myTab2">
+                                  <li class="nav-item">
+                                      <a href="#uno" class="nav-link" data-toggle="tab">Projekti sustava grijanja, hlađenja i klimatizacije</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a href="#due" class="nav-link" data-toggle="tab">Ispitivanje sustava grijanja, hlađenja i klimatizacije</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a href="#tre" class="nav-link" data-toggle="tab">Razvoj/ispitivanje elementata termotehnikog sustava i zgrada</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="#kvatro" class="nav-link" data-toggle="tab">Projektiranje ispitnih stanica </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#cinko" class="nav-link" data-toggle="tab">Studije primjenjivosti, Algoritmi i priručnici</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#zeks" class="nav-link" data-toggle="tab">Umjeravanje mjernih uređaja</a>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="uno">
+                                    <div class="row d-flex justify-content-center py-3">
+                                        <div class="shadow col-lg-10 py-3">
+                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
+                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
+                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="due">
+                                    <div class="row d-flex justify-content-center py-3">
+                                        <div class="shadow col-lg-10 py-3">
+                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
+                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
+                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tre">
+                                    <div class="row d-flex justify-content-center py-3">
+                                        <div class="shadow col-lg-10 py-3">
+                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
+                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
+                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="kvatro">
+                                    <div class="row d-flex justify-content-center py-3">
+                                        <div class="shadow col-lg-10 py-3">
+                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
+                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
+                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="cinko">
+                                    <div class="row d-flex justify-content-center py-3">
+                                        <div class="shadow col-lg-10 py-3">
+                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
+                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
+                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="zeks">
+                                    <div class="row d-flex justify-content-center py-3">
+                                        <div class="shadow col-lg-10 py-3">
+                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
+                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
+                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -106,28 +184,28 @@
         <footer class="bg-white">
             <div class="container-fluid py-3">
                 <div class="row py-3">
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                  <p class="font-italic text-muted py-5">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."</p>
+                <div class="col-xl-3 col-lg-6 col-md-12 mb-4 mb-lg-0">
+                  <img class="mt-5" src="src/sveuc_grb_malo_novo2.png" object-fit="scale-down">
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-xl-3 col-lg-6 col-md-12 mb-4 mb-lg-0">
                     <h6 class="text-uppercase font-weight-bold mb-4">Adresa</h6>
                     <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><p class="text-muted">Sveučilište u Zagrebu</p></li>
-                    <li class="mb-2"><p class="text-muted">Fakultet strojarstva i brodogradnje</p></li>
-                    <li class="mb-2"><p class="text-muted">Ivana Lučića 5</p></li>
-                    <li class="mb-2"><p class="text-muted">10 000 Zagreb</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">Sveučilište u Zagrebu</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">Fakultet strojarstva i brodogradnje</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">Ivana Lučića 5</p></li>
+                    <li class="mb-2"><p style="color: honeydew;">10 000 Zagreb</p></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-xl-3 col-lg-6 col-md-12 mb-4 mb-lg-0">
                   <h6 class="text-uppercase font-weight-bold mb-4">Korisni linkovi</h6>
                   <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="https://www.fsb.unizg.hr/index.php?fsbonline" class="text-muted" target="blank">FSB</a></li>
-                    <li class="mb-2"><a href="https://www.srce.unizg.hr/isvu" class="text-muted" target="blank">ISVU</a></li>
-                    <li class="mb-2"><a href="https://www.isvu.hr/studomat/hr/prijava" class="text-muted" target="blank">Studomat</a></li>
-                    <li class="mb-2"><a href="https://www.bib.irb.hr/" class="text-muted" target="blank">CROSBI</a></li>
+                    <li class="mb-2"><a href="https://www.fsb.unizg.hr/index.php?fsbonline" style="color: honeydew;" target="blank">FSB</a></li>
+                    <li class="mb-2"><a href="https://www.srce.unizg.hr/isvu" style="color: honeydew;" target="blank">ISVU</a></li>
+                    <li class="mb-2"><a href="https://www.isvu.hr/studomat/hr/prijava" style="color: honeydew;" target="blank">Studomat</a></li>
+                    <li class="mb-2"><a href="https://www.bib.irb.hr/" style="color: honeydew;" target="blank">CROSBI</a></li>
                   </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="col-xl-3 col-lg-6 col-md-12 mb-4 mb-lg-0">
                     <h6 class="text-uppercase font-weight-bold mb-4">Kontaktirajte nas</h6>
                     <div class="form-group">
                         <form>
@@ -138,7 +216,7 @@
                                 <textarea class="form-control" id="exampleMessage" placeholder="Poruka"></textarea>
                             </fieldset>
                             <fieldset class="form-group text-xs-right">
-                                <button type="button" class="btn btn-secondary-outline btn-lg" id="up">Pošalji</button>
+                                <button style="color: honeydew;" type="button" class="btn btn-secondary-outline btn-lg" id="up">Pošalji</button>
                             </fieldset>
                         </form>
                     </div>
