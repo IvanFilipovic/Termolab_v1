@@ -9,11 +9,13 @@
         <meta name="Author" content="CodeJuice">
         
         <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="main.css">  
+        <link rel="stylesheet" href="slider.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">   
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <title>TermoLab</title>
         <script>
@@ -57,7 +59,7 @@
           </nav>
 
 
-        <div class="container-fluid">
+        <div class="container-fluid py-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-10 col-md-10 py-3">
                     <ul class="nav nav-pills nav-justified" id="myTab">
@@ -100,23 +102,14 @@
                             <div class="col-lg-12 py-3">
                                 <ul class="nav nav-pills nav-justified" id="myTab2">
                                   <li class="nav-item">
-                                      <a href="#uno" class="nav-link" data-toggle="tab">Projekti sustava grijanja, hlađenja i klimatizacije</a>
+                                      <a href="#uno" class="nav-link" data-toggle="tab">Mjerenja i ispitivanja</a>
                                   </li>
                                   <li class="nav-item">
-                                      <a href="#due" class="nav-link" data-toggle="tab">Ispitivanje sustava grijanja, hlađenja i klimatizacije</a>
+                                      <a href="#due" class="nav-link" data-toggle="tab">Projekti i studije</a>
                                   </li>
                                   <li class="nav-item">
-                                      <a href="#tre" class="nav-link" data-toggle="tab">Razvoj/ispitivanje elementata termotehnikog sustava i zgrada</a>
+                                      <a href="#tre" class="nav-link" data-toggle="tab">Edukacije</a>
                                   </li>
-                                  <li class="nav-item">
-                                    <a href="#kvatro" class="nav-link" data-toggle="tab">Projektiranje ispitnih stanica </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#cinko" class="nav-link" data-toggle="tab">Studije primjenjivosti, Algoritmi i priručnici</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#zeks" class="nav-link" data-toggle="tab">Umjeravanje mjernih uređaja</a>
-                                </li>
                                 </ul>
                             </div>
                             <div class="tab-content">
@@ -147,33 +140,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="kvatro">
-                                    <div class="row d-flex justify-content-center py-3">
-                                        <div class="shadow col-lg-10 py-3">
-                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
-                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
-                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="cinko">
-                                    <div class="row d-flex justify-content-center py-3">
-                                        <div class="shadow col-lg-10 py-3">
-                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
-                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
-                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="zeks">
-                                    <div class="row d-flex justify-content-center py-3">
-                                        <div class="shadow col-lg-10 py-3">
-                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
-                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
-                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <h2>Our  Partners</h2>
+                                <section class="customer-logos slider">
+                                <div class="slide"><img src="src/EIHP.png"></div>
+                                <div class="slide"><img src="src/KFK.png"></div>
+                                <div class="slide"><img src="src/HT.png"></div>
+                                <div class="slide"><img src="src/HRT.png"></div>
+                                <div class="slide"><img src="src/pliva.png"></div>
+                                <div class="slide"><img src="src/hep.jpg"></div>
+                                <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+                                <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -233,7 +212,30 @@
             </div>
           </footer>
           <!-- End -->
-       
+          <script>
+            $(document).ready(function(){
+            $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+            }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+          </script>
     </body>
 </html>
 </html>

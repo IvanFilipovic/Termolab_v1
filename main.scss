@@ -1,20 +1,10 @@
-/* change the colors */
-$primary: rebeccapurple;
-$danger: #dd0000;
-$success: lime;
-$warning: orange;
-$info: aqua;
+$theme-colors: (
+  "primary": #2c5467,
+);
 
-$body-bg: #f3f3f0;
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
-@import "bootstrap";
-
-
-
-body {
-    padding-top: 90px;
-}
-
-section {
-    min-height: 90vh;
+.main-form  {
+    width: auto;
+    margin: auto;
 }
