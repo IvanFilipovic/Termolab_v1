@@ -21,6 +21,54 @@
           $(document).ready(function(){ 
             $("#myTab li:eq(0) a").tab('show'); // Pokazuje Prvi tab na otvranju stranice
           });
+          function prikaz(){
+            var x = document.getElementById("x1");
+              if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          function prikaz1(){
+            var y = document.getElementById("x2");
+              if (y.style.display == "none") {
+              y.style.display = "block";
+            } else {
+              y.style.display = "none";
+            }
+          }
+          function prikaz2(){
+            var y = document.getElementById("x3");
+              if (y.style.display === "none") {
+              y.style.visibility = "show";
+            } else {
+              y.style.display = "none";
+            }
+          }
+          function prikaz3(){
+            var y = document.getElementById("x4");
+              if (y.style.display == "none") {
+              y.style.display = "block";
+            } else {
+              y.style.display = "none";
+            }
+          }
+          function prikaz4(){
+            var y = document.getElementById("x5");
+              if (y.style.display == "none") {
+              y.style.display = "block";
+            } else {
+              y.style.display = "none";
+            }
+          }
+          function prikaz5(){
+            var y = document.getElementById("x6");
+              if (y.style.display == "none") {
+              y.style.display = "block";
+            } else {
+              y.style.display = "none";
+            }
+          }
         </script>
     </head>
     <body>
@@ -30,7 +78,7 @@
             aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item active px-5 py-2">
+                <li class="nav-item active px-2 py-2">
                     <a class="nav-link" id="stil" href="index.html">TERMOLAB <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item text-center px-2 py-2">
@@ -69,33 +117,33 @@
             <div class="tab-content">
               <div class="tab-pane fade" id="prvi">
                 <div class="row py-3 mt-3 shadow">
-                  <div class="col-lg-12 py-3">
-                    <h4 class="mt-2 py-3 text-center">Numerical and experimental approach for evaluation of thermal performances of a polymer solar collector</h4>
-                    <p class="mt-2 py-3 text-center">Filipović, Petar ; Dović, Damir ; Ranilović, Borjan ; Horvat, Ivan</p>
-                    <p class="mt-2 py-3 text-center">Renewable and Sustainable Energy Reviews (1364-0321) 112 (2019); 127-139</p>
-                    <p class="text-justify py-3">This paper presents a novel 2D numerical and experimental approach which can be used to assess the thermal performances of a polymer solar collector as a part of the design process. Numerical simulations are performed using software package FLUENT. To simulate radiative heat transfer, different radiation models that are available within FLUENT are applied including the discrete ordinates (DO) and surface-to-surface (S2S) model. Solar incident radiation is taken into account as an energy source computed analytically or via ray tracing software or as an external beam which is a part of boundary condition in semi- transparent DO model. Different combinations of longwave and shortwave radiation modeling are tested, first on a segment of a typical flat plate collector. In the second step, these models are applied to the test box at different boundary conditions and materials. Numerical models are then applied to the geometry of polymer solar collector prototype to assess its thermal efficiency. Combination of longwave radiation computed with DO and S2S sub-model and solar incident radiation modeled analytically or via ray tracing software yields sufficiently accurate results on the all tested computational domains, thus any of them can be used to compute thermal efficiency of a polymer solar collector. On the other hand, when applying semi-transparent DO model with the solar incident radiation modeled by the external beam, the obtained results are unphysical. Present approach is a part of the research aimed at the development of a thermally efficient low-cost polymer solar collector running in a drain back system. The prototype will be then experimentally tested.</p>
+                  <div class="col-lg-12 py-3 text-center">
+                    <h4 class="mt-1 py-3 text-center">Numerical and experimental approach for evaluation of thermal performances of a polymer solar collector</h4>
+                    <p class="mt-1 py-3 text-center">Filipović, Petar ; Dović, Damir ; Ranilović, Borjan ; Horvat, Ivan</p>
+                    <p class="mt-1 py-3 text-center">Renewable and Sustainable Energy Reviews (1364-0321) 112 (2019); 127-139</p>
+                    <button type="button" class="btn btn-outline-primary" onclick="prikaz()">Prikaži više</button>
+                    <p id="x1" class="text-justify py-3">This paper presents a novel 2D numerical and experimental approach which can be used to assess the thermal performances of a polymer solar collector as a part of the design process. Numerical simulations are performed using software package FLUENT. To simulate radiative heat transfer, different radiation models that are available within FLUENT are applied including the discrete ordinates (DO) and surface-to-surface (S2S) model. Solar incident radiation is taken into account as an energy source computed analytically or via ray tracing software or as an external beam which is a part of boundary condition in semi- transparent DO model. Different combinations of longwave and shortwave radiation modeling are tested, first on a segment of a typical flat plate collector. In the second step, these models are applied to the test box at different boundary conditions and materials. Numerical models are then applied to the geometry of polymer solar collector prototype to assess its thermal efficiency. Combination of longwave radiation computed with DO and S2S sub-model and solar incident radiation modeled analytically or via ray tracing software yields sufficiently accurate results on the all tested computational domains, thus any of them can be used to compute thermal efficiency of a polymer solar collector. On the other hand, when applying semi-transparent DO model with the solar incident radiation modeled by the external beam, the obtained results are unphysical. Present approach is a part of the research aimed at the development of a thermally efficient low-cost polymer solar collector running in a drain back system. The prototype will be then experimentally tested.</p>
                   </div>                  
                 </div>
                 <div class="row py-3 mt-3 shadow">
-                  <div class="col-lg-12 py-3">
-                    <h4 class="mt-2 py-3 text-center">Combustion of Agricultural Biomass - Issues and Solutions </h4>
-                    <p class="mt-2 py-3 text-center">Horvat, Ivan ; Dović, Damir</p>
-                    <p class="mt-2 py-3 text-center">Transactions of FAMENA (1333-1124) 42 (2018), SI-1; 75-86</p>
-                    <p class="text-justify py-3">Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units. Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units.</p>
+                  <div class="col-lg-12 py-3 text-center">
+                    <h4 class="mt-1 py-3 text-center">Combustion of Agricultural Biomass - Issues and Solutions </h4>
+                    <p class="mt-1 py-3 text-center">Horvat, Ivan ; Dović, Damir</p>
+                    <p class="mt-1 py-3 text-center">Transactions of FAMENA (1333-1124) 42 (2018), SI-1; 75-86</p>
+                    <button type="button" class="btn btn-outline-primary" onclick="prikaz1()">Prikaži više</button>
+                    <p id="x2"class="text-justify py-3">Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units. Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units.</p>
                   </div>                  
                 </div>
                 
               </div>
               <div class="tab-pane fade" id="drugi">
                 <div class="row py-3 mt-3 shadow">
-                  <div class="col-lg-4 py-3 text-center">
-                    <img src="src/radovi.PNG" class="img-fluid" object-fit="scale-down">
-                  </div>
-                  <div class="col-lg-8 py-3">
-                    <h4 class="mt-2 py-3 text-center">Algoritam za određivanje energijskih zahtjeva i učinkovitosti termotehničkih sustava u zgradama</h4>
-                    <p class="mt-2 py-3 text-center">Dović D., Rodić A., Švaić S.</p>
-                    <p class="mt-2 py-3 text-center">Klima-forum, 3. forum o hlađenju, klimatizaciji i ventilaciji</p>
-                    <p class="text-justify py-3">Algoritam za određivanje energijskih zahtjeva i učinkovitosti termotehničkih sustava u zgradama se temelji na normama na koje upućuje Pravilnik o energetskom certificiranju
+                  <div class="col-lg-12 py-3 text-center">
+                    <h4 class="mt-1 py-3 text-center">Algoritam za određivanje energijskih zahtjeva i učinkovitosti termotehničkih sustava u zgradama</h4>
+                    <p class="mt-1 py-3 text-center">Dović D., Rodić A., Švaić S.</p>
+                    <p class="mt-1 py-3 text-center">Klima-forum, 3. forum o hlađenju, klimatizaciji i ventilaciji</p>
+                    <button type="button" class="btn btn-outline-primary" onclick="prikaz2()">Prikaži više</button>
+                    <p id="x3" class="text-justify py-3">Algoritam za određivanje energijskih zahtjeva i učinkovitosti termotehničkih sustava u zgradama se temelji na normama na koje upućuje Pravilnik o energetskom certificiranju
                       zgrada (Narodne novine br. 36/10). Obuhvaća proračune konvencionalnih sustava grijanja
                       prostora i pripreme PTV-a te sustave s dizalicama topline i sunčane toplovodne sustave. Radi
                       lakšeg povezivanja izraza u algoritmu s onima iz normi, pored svakog izraza preuzetog iz
@@ -118,38 +166,32 @@
                   </div>                  
                 </div>
                 <div class="row py-3 mt-3 shadow">
-                  <div class="col-lg-4 py-3 text-center">
-                    <img src="src/solsustav.PNG" class="img-fluid" object-fit="scale-down">
-                  </div>
-                  <div class="col-lg-8 py-3">
-                    <h4 class="mt-2 py-3 text-center">Combustion of Agricultural Biomass - Issues and Solutions </h4>
-                    <p class="mt-2 py-3 text-center">Horvat, Ivan ; Dović, Damir</p>
-                    <p class="mt-2 py-3 text-center">Transactions of FAMENA (1333-1124) 42 (2018), SI-1; 75-86</p>
-                    <p class="text-justify py-3">Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units. Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units.</p>
+                  <div class="col-lg-12 py-3 text-center">
+                    <h4 class="mt-1 py-3 text-center">Combustion of Agricultural Biomass - Issues and Solutions </h4>
+                    <p class="mt-1 py-3 text-center">Horvat, Ivan ; Dović, Damir</p>
+                    <p class="mt-1 py-3 text-center">Transactions of FAMENA (1333-1124) 42 (2018), SI-1; 75-86</p>
+                    <button type="button" class="btn btn-outline-primary" onclick="prikaz3()">Prikaži više</button>
+                    <p id="x4" class="text-justify py-3">Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units. Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units.</p>
                   </div>                  
                 </div>
               </div>
               <div class="tab-pane fade" id="treci">
                 <div class="row py-3 mt-3 shadow">
-                  <div class="col-lg-4 py-3 text-center">
-                    <img src="src/termografija_2.png" class="img-fluid" object-fit="scale-down">
-                  </div>
-                  <div class="col-lg-8 py-3">
-                    <h4 class="mt-2 py-3 text-center">Hands-on guidelines useful to help decision makers to adopt the solar cooling system</h4>
-                    <p class="mt-2 py-3 text-center">Dović, Damir ; Ćosić, Boris ; Duić, Neven</p>
-                    <p class="mt-2 py-3 text-center">ADRIACOLD project web pages / deliverables</p>
-                    <p class="text-justify py-3">This handbook aims at providing practical information about application of solar cooling systems in buildings. First part comprises basics on solar energy and its utilization in hot water systems for conversion into useful thermal energy, since solar cooling systems can also be used for domestic hot water and space heating purposes. Second part deals with thermally driven cooling systems including all auxiliary components and design guidelines based on knowledge and experiences gained from design and monitoring of installed systems. The main purpose of this handbook is to provide investors, designers and potential users with practical and reliable information on suitability of solar cooling systems for particular application during the decision-making and the design processes as well to promote usage of such systems which can significantly reduce primary energy consumption in buildings.</p>
+                  <div class="col-lg-12 py-3 text-center">
+                    <h4 class="mt-1 py-3 text-center">Hands-on guidelines useful to help decision makers to adopt the solar cooling system</h4>
+                    <p class="mt-1 py-3 text-center">Dović, Damir ; Ćosić, Boris ; Duić, Neven</p>
+                    <p class="mt-1 py-3 text-center">ADRIACOLD project web pages / deliverables</p>
+                    <button type="button" class="btn btn-outline-primary" onclick="prikaz4()">Prikaži više</button>
+                    <p id="x5" class="text-justify py-3">This handbook aims at providing practical information about application of solar cooling systems in buildings. First part comprises basics on solar energy and its utilization in hot water systems for conversion into useful thermal energy, since solar cooling systems can also be used for domestic hot water and space heating purposes. Second part deals with thermally driven cooling systems including all auxiliary components and design guidelines based on knowledge and experiences gained from design and monitoring of installed systems. The main purpose of this handbook is to provide investors, designers and potential users with practical and reliable information on suitability of solar cooling systems for particular application during the decision-making and the design processes as well to promote usage of such systems which can significantly reduce primary energy consumption in buildings.</p>
                   </div>                  
                 </div>
                 <div class="row py-3 mt-3 shadow">
-                  <div class="col-lg-4 py-3 text-center">
-                    <img src="src/solsustav.PNG" class="img-fluid" object-fit="scale-down">
-                  </div>
-                  <div class="col-lg-8 py-3">
-                    <h4 class="mt-2 py-3 text-center">Combustion of Agricultural Biomass - Issues and Solutions </h4>
-                    <p class="mt-2 py-3 text-center">Horvat, Ivan ; Dović, Damir</p>
-                    <p class="mt-2 py-3 text-center">Transactions of FAMENA (1333-1124) 42 (2018) SI-1; 75-86</p>
-                    <p class="text-justify py-3">Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units. Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units.</p>
+                  <div class="col-lg-12 py-3 text-center">
+                    <h4 class="mt-1 py-3 text-center">Combustion of Agricultural Biomass - Issues and Solutions </h4>
+                    <p class="mt-1 py-3 text-center">Horvat, Ivan ; Dović, Damir</p>
+                    <p class="mt-1 py-3 text-center">Transactions of FAMENA (1333-1124) 42 (2018) SI-1; 75-86</p>
+                    <button type="button" class="btn btn-outline-primary" onclick="prikaz5()">Prikaži više</button>
+                    <p id="x6" class="text-justify py-3">Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units. Biomass is one of the oldest energy source known to mankind. Progress made so far in understanding of a rather complex direct combustion process allowed for a constant technology development. Increasingly stringent environmental requirements of the EU, especially in terms of the pollutant emissions, require development of new design solutions of the combustion system for residential hot water boilers fuelled by some form of solid biomass. The emissions are becoming even greater problem if, various residues from agricultural production are used instead of a wooden biomass, as they are becoming more desirable fuel due to their lower cost. In this paper, various issues related to the combustion of agricultural biomass are discussed. Attention is given to the problems associated with high volatile matter contents, presence of nitrogen, sulphur, chlorine and low ash melting temperatures. At the end, novel design modifications of a conventional residential biomass combustion system are proposed, as the well-known methodologies for combustion and emissions control applied in industrial-scale boilers are in most cases not suitable for small-scale units.</p>
                   </div>                  
                 </div>
               </div>

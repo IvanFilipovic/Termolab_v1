@@ -22,15 +22,36 @@
             $(document).ready(function(){ 
               $("#myTab li:eq(0) a").tab('show'); // Pokazuje Prvi tab na otvranju stranice
             });
-            $(document).ready(function(){ 
-              $("#myTab3 li:eq(0) a").tab('show'); // Pokazuje Prvi tab na otvranju stranice
-            });
         </script>
         <script>
             $(document).ready(function(){ 
               $("#myTab2 li:eq(0) a").tab('show');
             });
         </script>
+        <script>
+            $(document).ready(function(){
+            $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1900,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+            }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+          </script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -72,60 +93,55 @@
                         <li class="nav-item">
                             <a href="#two" class="nav-link" data-toggle="tab">Stručni projekti</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#tri" class="nav-link" data-toggle="tab">Konferencije</a>
+                        </li> 
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane fade" id="one">
-                            <div class="row py-3 mt-3 shadow">
+                            <div class="row d-flex justify-content-center py-3">
                                 <div class="col-lg-12 py-3">
-                                    <ul class="nav nav-pills nav-justified" id="myTab3">
-                                        <li class="nav-item">
-                                            <a href="#prvi" class="nav-link" data-toggle="tab">Znanstveni projekti</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#drugi" class="nav-link" data-toggle="tab">Konferencije</a>
-                                        </li>        
-                                    </ul>
-                                </div>
-                                <div class="tab-content">
-                                    <div class="tab-pane fade" id="prvi">
-                                        <div class="row d-flex justify-content-center py-3">
-                                            <div class="shadow col-lg-10 py-3">
-                                                <h4 class="mt-2 py-3 text-center"> CEN standard Certified Experts EU-wide qualification and training scheme based on EPBD mandated CEN standards</h4>
-                                                <img src="src/vakuumski_kol.png" class="img-fluid mx-auto d-block" object-fit="scale-down">
-                                                <p class="text-justify py-3">In order to reach the EU's energy and climate targets, a qualified building workforce is needed. Professionals need to be aware of new upcoming challenges: (e.g. nZEB, renewables, new state of art) and be trained on it. 
-  
-                                                The objective of this proposal is to set up a large-scale qualification and training schemes to increase the skills of HVAC professionals related to the new upcoming challenges. HVAC professionals play an important role in energy efficiency, especially in renovation where HVAC systems are often replaced or upgraded first. 
-                                      
-                                                The proposed training schemes are based on CEN standards related to the EPBD and mandated by the European Commission. The standards were voted positively in January 2017. The new CEN standards offer innovative approaches and solutions including renewables, economical calculation (cost optimum) and measured energy. 
-                                      
-                                                To bring them into application, training is urgently needed. Several national calculation methodologies for energy performance of buildings are based on current CEN standards and they have to be replaced by new standards. 
-                                      
-                                                The proposal is focusing on increased skills of HVAC professionals with direct links to the EPBD and Ecodesign Directive (e.g. Lot1, Lot 2). CEN standards are also used for the common EU voluntary certification scheme requested in the EPBD. 
-                                      
-                                                The training scheme will be complemented by a qualification scheme. 
-                                      
-                                                It addresses strong market request, shown by the support of stakeholders of the whole building value chain. 
-                                      
-                                                Qualification and training based on European standards is an advantage for mutual recognition of qualifications and certifications schemes among different EU Member States. Standardisation is also key to create level playing field conditions for products European wide. 
-                                      
-                                                The consortium includes standard writers, HVAC professional association and professionals, public authority advisers, universities and is supported by actors of the whole building value chain.</p>
-                                                <p class="text-justify py-3">Program financiranja: Obzor 2020</p>
-                                                <p class="text-justify py-3">Ukupni proračun: 824.883,92 EUR </p> 
-                                            </div> 
-                                        </div> 
-                                    </div> 
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade" id="drugi">
-                                            <div class="row d-flex justify-content-center py-3">
-                                                <div class="shadow col-lg-10 py-3">
-                                                    <h4 class="mt-2 py-3 text-center">Konferencija</h4>
-                                                    <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                                                 
-                            </div>
+                                    <table class="table table-striped table-primary">
+                                        <thead class="text-center">
+                                            <th style="width: 40%;" scope="col">Naziv</th>
+                                            <th style="width: 40%;" scope="col">Suradnici</th>
+                                            <th style="width: 40%;" scope="col">Godina</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td class="py-2">CEN standard Certified Experts EU-wide qualification and training scheme based on EPBD mandated CEN standards, HORIZON 2020-EE-2017-CSA-PPI br. 785018 </td>
+                                                <td class="py-2"><p>Damir Dović (GI), Dražen Lončar, Vladimir Soldo, Ivan Horvat, Petar Filipović, Iva Bertović</p><p>Ostale institucije: CSTB (Francuska), ENBEE (Slovačka), REHVA (Belgija), SLR (Italija)</p></td>
+                                                <td class="py-2">2017-2020</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">Razvoj sustava grijanja s Višenamjenskim solarnim kolektorom (VSK), IRI br. KK.01.2.1.01.0016</td>
+                                                <td class="py-2"><p>FSB: Damir Dović (GI), Ivan Horvat, Petar Filipović</p><p>Ostale institucije: ITRS d.o.o.</p></td>
+                                                <td class="py-2">2017-2020</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">Toplinski aparati u procesnoj tehnici i termotehnici, Ministarstvo znanosti, obrazovanja i športa Republike Hrvatske, br. 120021</td>
+                                                <td class="py-2">FSB: Srećko Švaić (GI), Mladen Andrassy, Damir Dović</td>
+                                                <td class="py-2">1996-2002</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">Toplinski aparati i uređaji za obnovljive izvore energije, Ministarstvo znanosti, obrazovanja i športa Republike Hrvatske, br. 0120038</td>
+                                                <td class="py-2">FSB: Srećko Švaić (GI), Mladen Andrassy, Ivanka Boras, Damir Dović</td>
+                                                <td class="py-2">2002-2006</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">Toplinski aparati i uređaji za obnovljive izvore energije-biomasa i Sunce, Ministarstvo znanosti, obrazovanja i športa Republike Hrvatske, br. 120-0682094-1816</td>
+                                                <td class="py-2">FSB: Srećko Švaić (GI), Mladen Andrassy, Ivanka Boras, Damir Dović</td>
+                                                <td class="py-2">2007-2010</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">The MSc Programe in Sustainable Energy Engineering at University of Zagreb (FSB), MSc-SEE-FSB, 2002-2003, TEMPUS</td>
+                                                <td class="py-2"><p>FSB: Tonko Ćurko (GI), Srećko Švaić, Damir Dović i dr.</p><p>Ostale institucije: KTH</p></td>
+                                                <td class="py-2">2002-2003</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                            </div> 
                         </div>
                         <div class="tab-pane fade" id="two">
                             <div class="col-lg-12 py-3">
@@ -144,28 +160,121 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade" id="uno">
                                     <div class="row d-flex justify-content-center py-3">
-                                        <div class="shadow col-lg-10 py-3">
-                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
-                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
-                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        <div class="col-lg-12 py-3">
+                                            <table class="table table-striped table-primary">
+                                                <thead class="text-center">
+                                                    <th style="width: 30%;" scope="col">Naziv</th>
+                                                    <th style="width: 25%;" scope="col">Investitori</th>
+                                                    <th style="width: 25%;" scope="col">Autori</th>
+                                                    <th style="width: 20%;" scope="col">Godina</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Razvoj/ispitivanje toplovodnih kotlova i peći na kruto gorivo</td>
+                                                        <td style="vertical-align:middle;" class="py-2"><p>Centrometal d.o.o.</p><p>Senko d.o.o.</p><p>Poljostroj d.o.o</p><p>Robert Bosch d.o.o.</p><p>Plamen d.o.o.</p><p>Mtech d.o.o.</p></td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Srećko Švaić (VP), Damir Dović (VP), Alan Rodić, Ivan Horvat</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2017-2020</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Razvoj/ispitivanje klimakomora</td>
+                                                        <td style="vertical-align:middle;" class="py-2">Pro-klima d.o.o.</td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Damir Dović (VP), Petar Filipović, Ivan Horvat</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2010-</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Razvoj/Ispitivanje sobnog sustava regulacije</td>
+                                                        <td style="vertical-align:middle;" class="py-2">Klimaoprema d.d.</td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Damir Dović (VP), Ivan Horvat</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2018-2020</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Ispitivanja, izvedbeni projekti, studije Strojarske instalacije sustava grijanja, hlađenja i ventilacije radione i hladne zone u tvrtci Vetropack Straža d.d</td>
+                                                        <td style="vertical-align:middle;" class="py-2">Vetropack Straža d.d.</td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Srećko Švaić (VP), Damir Dović (VP), Ivan Horvat, Petar Filipović</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2010-2019</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Toplinski aparati i uređaji za obnovljive izvore energije-biomasa i Sunce, Ministarstvo znanosti, obrazovanja i športa Republike Hrvatske, br. 120-0682094-1816</td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Srećko Švaić (GI), Mladen Andrassy, Ivanka Boras, Damir Dović</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2007-2010</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2017-2020</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Ispitivanje i analiza sustava ventilacije i mikroklime prostora u novoj zgradi/dvoranama HRT-a</td>
+                                                        <td style="vertical-align:middle;" class="py-2"><p>HRT</p></td>
+                                                        <td style="vertical-align:middle;" class="py-2"><p>FSB: Srećko Švaić (VP), Damir Dović</p><p>Ostale institucije: EkoVent-Info d.o.o.</p></td>
+                                                        <td style="vertical-align:middle;" class="py-2">2005-</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="due">
                                     <div class="row d-flex justify-content-center py-3">
-                                        <div class="shadow col-lg-10 py-3">
-                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
-                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
-                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        <div class="col-lg-12 py-3">
+                                            <table class="table table-striped table-primary">
+                                                <thead class="text-center">
+                                                    <th style="width: 30%;" scope="col">Naziv</th>
+                                                    <th style="width: 25%;" scope="col">Investitori</th>
+                                                    <th style="width: 25%;" scope="col">Autori</th>
+                                                    <th style="width: 20%;" scope="col">Godina</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Razvoj/ispitivanje toplovodnih kotlova i peći na kruto gorivo</td>
+                                                        <td style="vertical-align:middle;" class="py-2"><p>Centrometal d.o.o.</p><p>Senko d.o.o.</p><p>Poljostroj d.o.o</p><p>Robert Bosch d.o.o.</p><p>Plamen d.o.o.</p><p>Mtech d.o.o.</p></td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Srećko Švaić (VP), Damir Dović (VP), Alan Rodić, Ivan Horvat</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2017-2020</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Razvoj/ispitivanje klimakomora</td>
+                                                        <td style="vertical-align:middle;" class="py-2">Pro-klima d.o.o.</td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Damir Dović (VP), Petar Filipović, Ivan Horvat</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2010-</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Razvoj/Ispitivanje sobnog sustava regulacije</td>
+                                                        <td style="vertical-align:middle;" class="py-2">Klimaoprema d.d.</td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Damir Dović (VP), Ivan Horvat</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2018-2020</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="tre">
                                     <div class="row d-flex justify-content-center py-3">
-                                        <div class="shadow col-lg-10 py-3">
-                                            <h4 class="mt-2 py-3 text-center">Izvedbeni projekt strojarskih instalacija</h4>
-                                            <h4 class="mt-2 py-3 text-center">Trg. centar Kaufland, Branimirova</h4>
-                                            <p class="text-justify py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus eros purus, et aliquam turpis ornare ut. Ut gravida et mauris nec tincidunt. Donec blandit facilisis commodo. Phasellus dapibus purus nec sem dapibus vehicula. Phasellus justo dui, mollis vel tincidunt non, dignissim id elit. Etiam venenatis finibus turpis. Proin interdum tortor scelerisque mauris tempus, eget viverra augue iaculis. Morbi in felis lacinia lacus laoreet maximus. Sed pharetra tincidunt ultrices. Aenean maximus placerat tortor, malesuada mattis nibh interdum vitae.</p>
+                                        <div class="col-lg-12 py-3">
+                                            <table class="table table-striped table-primary">
+                                                <thead class="text-center">
+                                                    <th style="width: 30%;" scope="col">Naziv</th>
+                                                    <th style="width: 25%;" scope="col">Investitori</th>
+                                                    <th style="width: 25%;" scope="col">Autori</th>
+                                                    <th style="width: 20%;" scope="col">Godina</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td style="vertical-align:middle;" class="py-2">Razvoj/ispitivanje toplovodnih kotlova i peći na kruto gorivo</td>
+                                                        <td class="py-2"><p>Centrometal d.o.o.</p><p>Senko d.o.o.</p><p>Poljostroj d.o.o</p><p>Robert Bosch d.o.o.</p><p>Plamen d.o.o.</p><p>Mtech d.o.o.</p></td>
+                                                        <td style="vertical-align:middle;" class="py-2">FSB: Srećko Švaić (VP), Damir Dović (VP), Alan Rodić, Ivan Horvat</td>
+                                                        <td style="vertical-align:middle;" class="py-2">2017-2020</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td class="py-2">Razvoj/ispitivanje klimakomora</td>
+                                                        <td class="py-2">Pro-klima d.o.o.</td>
+                                                        <td class="py-2">FSB: Damir Dović (VP), Petar Filipović, Ivan Horvat</td>
+                                                        <td class="py-2">2010-</td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td class="py-2">Razvoj/Ispitivanje sobnog sustava regulacije</td>
+                                                        <td class="py-2">Klimaoprema d.d.</td>
+                                                        <td class="py-2">FSB: Damir Dović (VP), Ivan Horvat</td>
+                                                        <td class="py-2">2018-2020</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -182,6 +291,51 @@
                                 <div class="slide"><img src="src/KO.png"></div>
                                 <div class="slide"><img src="src/KB.png"></div>
                                 </section>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tri">
+                            <div class="row d-flex justify-content-center py-3">
+                                <div class="col-lg-12 py-3">
+                                    <table class="table table-striped table-primary">
+                                        <thead class="text-center">
+                                            <th style="width: 40%;" scope="col">Naziv</th>
+                                            <th style="width: 40%;" scope="col">Suradnici</th>
+                                            <th style="width: 40%;" scope="col">Godina</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="text-center">
+                                                <td class="py-2">CEN standard Certified Experts EU-wide qualification and training scheme based on EPBD mandated CEN standards, HORIZON 2020-EE-2017-CSA-PPI br. 785018 </td>
+                                                <td class="py-2"><p>Damir Dović (GI), Dražen Lončar, Vladimir Soldo, Ivan Horvat, Petar Filipović, Iva Bertović</p><p>Ostale institucije: CSTB (Francuska), ENBEE (Slovačka), REHVA (Belgija), SLR (Italija)</p></td>
+                                                <td class="py-2">2017-2020</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">Razvoj sustava grijanja s Višenamjenskim solarnim kolektorom (VSK), IRI br. KK.01.2.1.01.0016</td>
+                                                <td class="py-2"><p>FSB: Damir Dović (GI), Ivan Horvat, Petar Filipović</p><p>Ostale institucije: ITRS d.o.o.</p></td>
+                                                <td class="py-2">2017-2020</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">Toplinski aparati u procesnoj tehnici i termotehnici, Ministarstvo znanosti, obrazovanja i športa Republike Hrvatske, br. 120021</td>
+                                                <td class="py-2">FSB: Srećko Švaić (GI), Mladen Andrassy, Damir Dović</td>
+                                                <td class="py-2">1996-2002</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">Toplinski aparati i uređaji za obnovljive izvore energije, Ministarstvo znanosti, obrazovanja i športa Republike Hrvatske, br. 0120038</td>
+                                                <td class="py-2">FSB: Srećko Švaić (GI), Mladen Andrassy, Ivanka Boras, Damir Dović</td>
+                                                <td class="py-2">2002-2006</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">Toplinski aparati i uređaji za obnovljive izvore energije-biomasa i Sunce, Ministarstvo znanosti, obrazovanja i športa Republike Hrvatske, br. 120-0682094-1816</td>
+                                                <td class="py-2">FSB: Srećko Švaić (GI), Mladen Andrassy, Ivanka Boras, Damir Dović</td>
+                                                <td class="py-2">2007-2010</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="py-2">The MSc Programe in Sustainable Energy Engineering at University of Zagreb (FSB), MSc-SEE-FSB, 2002-2003, TEMPUS</td>
+                                                <td class="py-2"><p>FSB: Tonko Ćurko (GI), Srećko Švaić, Damir Dović i dr.</p><p>Ostale institucije: KTH</p></td>
+                                                <td class="py-2">2002-2003</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -241,30 +395,7 @@
             </div>
           </footer>
           <!-- End -->
-          <script>
-            $(document).ready(function(){
-            $('.customer-logos').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1900,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-            }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-          </script>
+          
     </body>
 </html>
 </html>
