@@ -17,6 +17,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <title>TermoLab</title>
+        <script>
+            $(document).ready(function(){ 
+              $("#myTab li:eq(0) a").tab('show'); // Pokazuje Prvi tab na otvranju stranice
+            });
+        </script>
 
     </head>
     <body>
@@ -51,99 +56,253 @@
 
         <div class="container-fluid py-5">
             <div class="row py-3">
-                <div class="col md-3 shadow-none">
-                <ul class="nav nav-pills nav-justified" id="myTab">
-                    <li class="nav-item flex-sm-fill py-3">
-                        <a id="home-tab" data-toggle="tab" href="#predmet1" role="tab" aria-controls="predmet1" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">GRADNJA APARATA</a>
-                    </li>
-                    <li class="nav-item flex-sm-fill py-3">
-                        <a id="profile-tab" data-toggle="tab" href="#predmet2" role="tab" aria-controls="predmet2" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">SOLARNI TOPLINSKI SUSTAVI</a>
-                    </li>
-                    <li class="nav-item flex-sm-fill py-3">
-                        <a id="contact-tab" data-toggle="tab" href="#predmet3" role="tab" aria-controls="predmet3" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">KVANTITATIVNA INFRACRVENA TERMOGRAFIJA</a>
-                    </li>
-                    <li class="nav-item flex-sm-fill py-3">
-                        <a id="contact-tab" data-toggle="tab" href="#predmet4" role="tab" aria-controls="predmet4" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">OBNOVLJIVI IZVORI ENERGIJE</a>
-                    </li>
-                    <li class="nav-item flex-sm-fill py-3">
-                        <a id="contact-tab" data-toggle="tab" href="#predmet5" role="tab" aria-controls="predmet5" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">laboratorijski rad</a>
-                    </li>
-                    <li class="nav-item flex-sm-fill py-3">
-                        <a id="contact-tab" data-toggle="tab" href="#predmet6" role="tab" aria-controls="predmet5" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">energetsko certificiranje zgrada</a>
-                    </li>
-                    <li class="nav-item flex-sm-fill py-3">
-                        <a id="contact-tab" data-toggle="tab" href="#predmet7" role="tab" aria-controls="predmet5" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">termotehnički pokus</a>
-                    </li>
-                </ul>
+                <div class="col-lg-12 col-md-12 py-3">
+                    <ul class="nav nav-pills nav-justified" id="myTab">
+                        <li class="nav-item">
+                            <a href="#predip" class="nav-link" data-toggle="tab">Preddiplomski studij</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#dip" class="nav-link" data-toggle="tab">Diplomski studij</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#doc" class="nav-link" data-toggle="tab">Doktorat</a>
+                        </li> 
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="predip">
+                            <div class="row d-flex justify-content-center py-3">
+                                <div class="col md-3 shadow-none">
+                                    <ul class="nav nav-pills nav-justified" id="myTab1">
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="home-tab" data-toggle="tab" href="#predip1" role="tab" aria-controls="predip1" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">GRADNJA APARATA</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="profile-tab" data-toggle="tab" href="#predip2" role="tab" aria-controls="predip2" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">SOLARNI TOPLINSKI SUSTAVI</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#predip3" role="tab" aria-controls="predip3" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">KVANTITATIVNA INFRACRVENA TERMOGRAFIJA</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#predip4" role="tab" aria-controls="predip4" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">OBNOVLJIVI IZVORI ENERGIJE</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#predip5" role="tab" aria-controls="predip5" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">laboratorijski rad</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#predip6" role="tab" aria-controls="predip6" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">energetsko certificiranje zgrada</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#predip7" role="tab" aria-controls="predip7" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">termotehnički pokus</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-9 text-dark py-3 mx-auto">
+                                    <div id="myTabContent" class="tab-content col-md-12">
+                                        <div id="predip1" role="tabpanel" aria-labelledby="predip1-tab" class="tab-pane fade px-4 py-5 show active">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Aparati i tlačna oprema zauzimaju vrlo važno mjesto u procesnoj industriji i energetici. Od zagrijavanja mazuta, uguščivanja raznih otopina ili proizvodnje pare za grijanje prostorea ili pripremu potrošne tople vode, hlađenje transformatora potrebni su aparati pomoću koji će to biti moguće ostvariti. Kroz ovaj kolegij student se upoznaje sa spomenutim vrstama aparata odnosno, izmjenjivačima topline (shell & tube), kotlovima raznih snaga, zagrijačima zraka ili plina, hladnjacima ulja, kondenzatorima itd. </p>
+                                            <p class="text-muted mb-0">Kroz semestar studenti će sami konstruirati toplinski aparat, od same ideje i zamisli do provedbe i izrade potrebne dokumentacije. Dokumentacija za jedan takav aparat obuhvaća termodinamički i hidraulički proračun na temelju zadanih projektnih parametara, te proračun čvrstoće. Tehnička dokumentacija, koja podrazumijeva sklopne i radioničke crteže, je također sastavni dio te dokumentacije. </p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/689pxwibojkx7nm/AADTaOwd-pH5WeXmarRbhoRYa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="predip2" role="tabpanel" aria-labelledby="predip2-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Ovaj kolegij je namijenjen svima onima koji se žele upoznati sa načinom prikupljanja solarne toplinske energije. Danas, sve je više naglasak na obnovljivim izvora energije te je svakako od velike važnosti upoznavanje ljudi, a pogotovo budući projektanta i inženjera u ovom području radi ispravnog dimenzioniranja solarnih sustava. Kroz kolegij upoznat ćete se sa osnovama zračenja i proračunom dostupne solarne energije na plohu pod bilo kojim nagibom i na bilo kojem mjestu na zemlji. Nakon određivanja dostupne energije sunca, pristupa se proračunu kolektora. Proračun kolektora temelji se na određivanju toplinski gubitaka, nakon čega je moguće odrediti energiju predanu vodu kao i učinkovitost kolektora.</p>
+                                            <p class="text-muted mb-0">Koristeći prethodno napravljeni proračun napravit će se parametarska analiza kako bi dobio uvid u utjecaj pojedinih parametara kolektora poput određenih konstrukcijskih značajki ili pogonskih parametara, na sam rad kolektora. Kolektor je samo jedna od komponenti solarnog toplinsko sustava, druga, posebno važna komponenta je i spremnik topline koji direktno utječe na učinkovitost i rad kolektora. U zadnjem dijelu kolegija naglasak će biti na matematičkom modeliranju i dinamičkoj simulaciji rada solarnog toplinskog sustava.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/us1d0nst3ubccfy/AAAu8-K80jAHxD9s4DAkUXZHa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="predip3" role="tabpanel" aria-labelledby="predip3-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Termografija je beskontaktna metoda mjerenja temperature i njene raspodjele na pojedinim površinama objekata, te možemo reći da tako nastali zapis, predstavlja vizualizaciju temperaturnog polja.</p>
+                                            <p class="text-muted">Kroz ovaj kolegij studenti će se upoznati sa načelima rada termografije, detaljnije upoznavanje sa mehanizmima izmjene topline, posebno zračenjem. Također, kroz razne vježbe u sklopu ovog kolegija, studenti će se osposobiti za samostalni rad sa termokamerom, upoznavanjem bitnih parametara prilikom snimanja, provedba postupka samog snimanja kao i naknada analiza termograma uz pomoć odgovarajućeg softwarea.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="docs/Darknet - tehnički aspekti.docx" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="predip4" role="tabpanel" aria-labelledby="predip4-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">OIE tekst.</p>
+                                            <p class="text-muted">OIE tekst.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/pzbmtgvb09ohxb4/AABjvlPEo8oVcosEs3_BRuvsa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="predip5" role="tabpanel" aria-labelledby="predip5-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">lab rad tekst.</p>
+                                            <p class="text-muted">lab rad tekst.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="predip6" role="tabpanel" aria-labelledby="predip6-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">ECZ tekst.</p>
+                                            <p class="text-muted">ECZ tekst.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="predip7" role="tabpanel" aria-labelledby="predip7-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">termotehnički pokus tekst.</p>
+                                            <p class="text-muted">termotehnički pokus tekst.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="tab-pane fade" id="dip">
+                            <div class="row d-flex justify-content-center py-3">
+                                <div class="col md-3 shadow-none">
+                                    <ul class="nav nav-pills nav-justified" id="myTab1">
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="home-tab" data-toggle="tab" href="#dip1" role="tab" aria-controls="dip1" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">GRADNJA APARATA</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="profile-tab" data-toggle="tab" href="#dip2" role="tab" aria-controls="dip2" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">SOLARNI TOPLINSKI SUSTAVI</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#dip3" role="tab" aria-controls="dip3" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">KVANTITATIVNA INFRACRVENA TERMOGRAFIJA</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#dip4" role="tab" aria-controls="dip4" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">OBNOVLJIVI IZVORI ENERGIJE</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#dip5" role="tab" aria-controls="dip5" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">laboratorijski rad</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-9 text-dark py-3 mx-auto">
+                                    <div id="myTabContent" class="tab-content col-md-12">
+                                        <div id="dip1" role="tabpanel" aria-labelledby="dip1-tab" class="tab-pane fade px-4 py-5 show active">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Aparati i tlačna oprema zauzimaju vrlo važno mjesto u procesnoj industriji i energetici. Od zagrijavanja mazuta, uguščivanja raznih otopina ili proizvodnje pare za grijanje prostorea ili pripremu potrošne tople vode, hlađenje transformatora potrebni su aparati pomoću koji će to biti moguće ostvariti. Kroz ovaj kolegij student se upoznaje sa spomenutim vrstama aparata odnosno, izmjenjivačima topline (shell & tube), kotlovima raznih snaga, zagrijačima zraka ili plina, hladnjacima ulja, kondenzatorima itd. </p>
+                                            <p class="text-muted mb-0">Kroz semestar studenti će sami konstruirati toplinski aparat, od same ideje i zamisli do provedbe i izrade potrebne dokumentacije. Dokumentacija za jedan takav aparat obuhvaća termodinamički i hidraulički proračun na temelju zadanih projektnih parametara, te proračun čvrstoće. Tehnička dokumentacija, koja podrazumijeva sklopne i radioničke crteže, je također sastavni dio te dokumentacije. </p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/689pxwibojkx7nm/AADTaOwd-pH5WeXmarRbhoRYa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="dip2" role="tabpanel" aria-labelledby="dip2-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Ovaj kolegij je namijenjen svima onima koji se žele upoznati sa načinom prikupljanja solarne toplinske energije. Danas, sve je više naglasak na obnovljivim izvora energije te je svakako od velike važnosti upoznavanje ljudi, a pogotovo budući projektanta i inženjera u ovom području radi ispravnog dimenzioniranja solarnih sustava. Kroz kolegij upoznat ćete se sa osnovama zračenja i proračunom dostupne solarne energije na plohu pod bilo kojim nagibom i na bilo kojem mjestu na zemlji. Nakon određivanja dostupne energije sunca, pristupa se proračunu kolektora. Proračun kolektora temelji se na određivanju toplinski gubitaka, nakon čega je moguće odrediti energiju predanu vodu kao i učinkovitost kolektora.</p>
+                                            <p class="text-muted mb-0">Koristeći prethodno napravljeni proračun napravit će se parametarska analiza kako bi dobio uvid u utjecaj pojedinih parametara kolektora poput određenih konstrukcijskih značajki ili pogonskih parametara, na sam rad kolektora. Kolektor je samo jedna od komponenti solarnog toplinsko sustava, druga, posebno važna komponenta je i spremnik topline koji direktno utječe na učinkovitost i rad kolektora. U zadnjem dijelu kolegija naglasak će biti na matematičkom modeliranju i dinamičkoj simulaciji rada solarnog toplinskog sustava.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/us1d0nst3ubccfy/AAAu8-K80jAHxD9s4DAkUXZHa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="dip3" role="tabpanel" aria-labelledby="dip3-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Termografija je beskontaktna metoda mjerenja temperature i njene raspodjele na pojedinim površinama objekata, te možemo reći da tako nastali zapis, predstavlja vizualizaciju temperaturnog polja.</p>
+                                            <p class="text-muted">Kroz ovaj kolegij studenti će se upoznati sa načelima rada termografije, detaljnije upoznavanje sa mehanizmima izmjene topline, posebno zračenjem. Također, kroz razne vježbe u sklopu ovog kolegija, studenti će se osposobiti za samostalni rad sa termokamerom, upoznavanjem bitnih parametara prilikom snimanja, provedba postupka samog snimanja kao i naknada analiza termograma uz pomoć odgovarajućeg softwarea.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="docs/Darknet - tehnički aspekti.docx" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="dip4" role="tabpanel" aria-labelledby="predmet4-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">OIE tekst.</p>
+                                            <p class="text-muted">OIE tekst.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/pzbmtgvb09ohxb4/AABjvlPEo8oVcosEs3_BRuvsa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="dip5" role="tabpanel" aria-labelledby="dip5-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">lab rad tekst.</p>
+                                            <p class="text-muted">lab rad tekst.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="tab-pane fade" id="doc">
+                            <div class="row d-flex justify-content-center py-3">
+                                <div class="col md-3 shadow-none">
+                                    <ul class="nav nav-pills nav-justified" id="myTab1">
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="home-tab" data-toggle="tab" href="#doc1" role="tab" aria-controls="doc1" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">GRADNJA APARATA</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="profile-tab" data-toggle="tab" href="#doc2" role="tab" aria-controls="doc2" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">SOLARNI TOPLINSKI SUSTAVI</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#doc3" role="tab" aria-controls="doc3" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">KVANTITATIVNA INFRACRVENA TERMOGRAFIJA</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill py-3">
+                                            <a id="contact-tab" data-toggle="tab" href="#doc4" role="tab" aria-controls="doc4" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">OBNOVLJIVI IZVORI ENERGIJE</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-9 text-dark py-3 mx-auto">
+                                    <div id="myTabContent" class="tab-content col-md-12">
+                                        <div id="doc1" role="tabpanel" aria-labelledby="doc1-tab" class="tab-pane fade px-4 py-5 show active">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Aparati i tlačna oprema zauzimaju vrlo važno mjesto u procesnoj industriji i energetici. Od zagrijavanja mazuta, uguščivanja raznih otopina ili proizvodnje pare za grijanje prostorea ili pripremu potrošne tople vode, hlađenje transformatora potrebni su aparati pomoću koji će to biti moguće ostvariti. Kroz ovaj kolegij student se upoznaje sa spomenutim vrstama aparata odnosno, izmjenjivačima topline (shell & tube), kotlovima raznih snaga, zagrijačima zraka ili plina, hladnjacima ulja, kondenzatorima itd. </p>
+                                            <p class="text-muted mb-0">Kroz semestar studenti će sami konstruirati toplinski aparat, od same ideje i zamisli do provedbe i izrade potrebne dokumentacije. Dokumentacija za jedan takav aparat obuhvaća termodinamički i hidraulički proračun na temelju zadanih projektnih parametara, te proračun čvrstoće. Tehnička dokumentacija, koja podrazumijeva sklopne i radioničke crteže, je također sastavni dio te dokumentacije. </p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/689pxwibojkx7nm/AADTaOwd-pH5WeXmarRbhoRYa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="doc2" role="tabpanel" aria-labelledby="doc2-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Ovaj kolegij je namijenjen svima onima koji se žele upoznati sa načinom prikupljanja solarne toplinske energije. Danas, sve je više naglasak na obnovljivim izvora energije te je svakako od velike važnosti upoznavanje ljudi, a pogotovo budući projektanta i inženjera u ovom području radi ispravnog dimenzioniranja solarnih sustava. Kroz kolegij upoznat ćete se sa osnovama zračenja i proračunom dostupne solarne energije na plohu pod bilo kojim nagibom i na bilo kojem mjestu na zemlji. Nakon određivanja dostupne energije sunca, pristupa se proračunu kolektora. Proračun kolektora temelji se na određivanju toplinski gubitaka, nakon čega je moguće odrediti energiju predanu vodu kao i učinkovitost kolektora.</p>
+                                            <p class="text-muted mb-0">Koristeći prethodno napravljeni proračun napravit će se parametarska analiza kako bi dobio uvid u utjecaj pojedinih parametara kolektora poput određenih konstrukcijskih značajki ili pogonskih parametara, na sam rad kolektora. Kolektor je samo jedna od komponenti solarnog toplinsko sustava, druga, posebno važna komponenta je i spremnik topline koji direktno utječe na učinkovitost i rad kolektora. U zadnjem dijelu kolegija naglasak će biti na matematičkom modeliranju i dinamičkoj simulaciji rada solarnog toplinskog sustava.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/us1d0nst3ubccfy/AAAu8-K80jAHxD9s4DAkUXZHa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="doc3" role="tabpanel" aria-labelledby="doc3-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">Termografija je beskontaktna metoda mjerenja temperature i njene raspodjele na pojedinim površinama objekata, te možemo reći da tako nastali zapis, predstavlja vizualizaciju temperaturnog polja.</p>
+                                            <p class="text-muted">Kroz ovaj kolegij studenti će se upoznati sa načelima rada termografije, detaljnije upoznavanje sa mehanizmima izmjene topline, posebno zračenjem. Također, kroz razne vježbe u sklopu ovog kolegija, studenti će se osposobiti za samostalni rad sa termokamerom, upoznavanjem bitnih parametara prilikom snimanja, provedba postupka samog snimanja kao i naknada analiza termograma uz pomoć odgovarajućeg softwarea.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="docs/Darknet - tehnički aspekti.docx" role="button" download>Materijali</a>
+                                        </div>
+                                        <div id="doc4" role="tabpanel" aria-labelledby="doc4-tab" class="tab-pane fade px-4 py-5">
+                                            <h5 class="text-muted py-2">Opis kolegija</h5>
+                                            <p class="text-muted">OIE tekst.</p>
+                                            <p class="text-muted">OIE tekst.</p>
+                                            <h5 class="text-muted py-2">Obavijesti</h5>
+                                            <p class="text-muted">Obavijesti o kolegiju</p>
+                                            <h5 class="text-muted py-4">Materijali</h5>
+                                            <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/pzbmtgvb09ohxb4/AABjvlPEo8oVcosEs3_BRuvsa?dl=0" role="button" download>Materijali</a>
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-md-9 text-dark py-3 mx-auto">
-                    <div id="myTabContent" class="tab-content col-md-12">
-                    <div id="predmet1" role="tabpanel" aria-labelledby="predmet1-tab" class="tab-pane fade px-4 py-5 show active">
-                        <h5 class="text-muted py-2">Opis kolegija</h5>
-                        <p class="text-muted">Aparati i tlačna oprema zauzimaju vrlo važno mjesto u procesnoj industriji i energetici. Od zagrijavanja mazuta, uguščivanja raznih otopina ili proizvodnje pare za grijanje prostorea ili pripremu potrošne tople vode, hlađenje transformatora potrebni su aparati pomoću koji će to biti moguće ostvariti. Kroz ovaj kolegij student se upoznaje sa spomenutim vrstama aparata odnosno, izmjenjivačima topline (shell & tube), kotlovima raznih snaga, zagrijačima zraka ili plina, hladnjacima ulja, kondenzatorima itd. </p>
-                        <p class="text-muted mb-0">Kroz semestar studenti će sami konstruirati toplinski aparat, od same ideje i zamisli do provedbe i izrade potrebne dokumentacije. Dokumentacija za jedan takav aparat obuhvaća termodinamički i hidraulički proračun na temelju zadanih projektnih parametara, te proračun čvrstoće. Tehnička dokumentacija, koja podrazumijeva sklopne i radioničke crteže, je također sastavni dio te dokumentacije. </p>
-                        <h5 class="text-muted py-2">Obavijesti</h5>
-                        <p class="text-muted">Obavijesti o kolegiju</p>
-                        <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/689pxwibojkx7nm/AADTaOwd-pH5WeXmarRbhoRYa?dl=0" role="button" download>Materijali</a>
-                    </div>
-                    <div id="predmet2" role="tabpanel" aria-labelledby="predmet2-tab" class="tab-pane fade px-4 py-5">
-                        <h5 class="text-muted py-2">Opis kolegija</h5>
-                        <p class="text-muted">Ovaj kolegij je namijenjen svima onima koji se žele upoznati sa načinom prikupljanja solarne toplinske energije. Danas, sve je više naglasak na obnovljivim izvora energije te je svakako od velike važnosti upoznavanje ljudi, a pogotovo budući projektanta i inženjera u ovom području radi ispravnog dimenzioniranja solarnih sustava. Kroz kolegij upoznat ćete se sa osnovama zračenja i proračunom dostupne solarne energije na plohu pod bilo kojim nagibom i na bilo kojem mjestu na zemlji. Nakon određivanja dostupne energije sunca, pristupa se proračunu kolektora. Proračun kolektora temelji se na određivanju toplinski gubitaka, nakon čega je moguće odrediti energiju predanu vodu kao i učinkovitost kolektora.</p>
-                        <p class="text-muted mb-0">Koristeći prethodno napravljeni proračun napravit će se parametarska analiza kako bi dobio uvid u utjecaj pojedinih parametara kolektora poput određenih konstrukcijskih značajki ili pogonskih parametara, na sam rad kolektora. Kolektor je samo jedna od komponenti solarnog toplinsko sustava, druga, posebno važna komponenta je i spremnik topline koji direktno utječe na učinkovitost i rad kolektora. U zadnjem dijelu kolegija naglasak će biti na matematičkom modeliranju i dinamičkoj simulaciji rada solarnog toplinskog sustava.</p>
-                        <h5 class="text-muted py-2">Obavijesti</h5>
-                        <p class="text-muted">Obavijesti o kolegiju</p>
-                        <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/us1d0nst3ubccfy/AAAu8-K80jAHxD9s4DAkUXZHa?dl=0" role="button" download>Materijali</a>
-                    </div>
-                    <div id="predmet3" role="tabpanel" aria-labelledby="predmet3-tab" class="tab-pane fade px-4 py-5">
-                        <h5 class="text-muted py-2">Opis kolegija</h5>
-                        <p class="text-muted">Termografija je beskontaktna metoda mjerenja temperature i njene raspodjele na pojedinim površinama objekata, te možemo reći da tako nastali zapis, predstavlja vizualizaciju temperaturnog polja.</p>
-                        <p class="text-muted">Kroz ovaj kolegij studenti će se upoznati sa načelima rada termografije, detaljnije upoznavanje sa mehanizmima izmjene topline, posebno zračenjem. Također, kroz razne vježbe u sklopu ovog kolegija, studenti će se osposobiti za samostalni rad sa termokamerom, upoznavanjem bitnih parametara prilikom snimanja, provedba postupka samog snimanja kao i naknada analiza termograma uz pomoć odgovarajućeg softwarea.</p>
-                        <h5 class="text-muted py-2">Obavijesti</h5>
-                        <p class="text-muted">Obavijesti o kolegiju</p>
-                        <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="docs/Darknet - tehnički aspekti.docx" role="button" download>Materijali</a>
-                    </div>
-                    <div id="predmet4" role="tabpanel" aria-labelledby="predmet4-tab" class="tab-pane fade px-4 py-5">
-                        <h5 class="text-muted py-2">Opis kolegija</h5>
-                        <p class="text-muted">OIE tekst.</p>
-                        <p class="text-muted">OIE tekst.</p>
-                        <h5 class="text-muted py-2">Obavijesti</h5>
-                        <p class="text-muted">Obavijesti o kolegiju</p>
-                        <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/pzbmtgvb09ohxb4/AABjvlPEo8oVcosEs3_BRuvsa?dl=0" role="button" download>Materijali</a>
-                    </div>
-                    <div id="predmet5" role="tabpanel" aria-labelledby="predmet5-tab" class="tab-pane fade px-4 py-5">
-                        <h5 class="text-muted py-2">Opis kolegija</h5>
-                        <p class="text-muted">lab rad tekst.</p>
-                        <p class="text-muted">lab rad tekst.</p>
-                        <h5 class="text-muted py-2">Obavijesti</h5>
-                        <p class="text-muted">Obavijesti o kolegiju</p>
-                        <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
-                    </div>
-                    <div id="predmet6" role="tabpanel" aria-labelledby="predmet5-tab" class="tab-pane fade px-4 py-5">
-                        <h5 class="text-muted py-2">Opis kolegija</h5>
-                        <p class="text-muted">ECZ tekst.</p>
-                        <p class="text-muted">ECZ tekst.</p>
-                        <h5 class="text-muted py-2">Obavijesti</h5>
-                        <p class="text-muted">Obavijesti o kolegiju</p>
-                        <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
-                    </div>
-                    <div id="predmet7" role="tabpanel" aria-labelledby="predmet5-tab" class="tab-pane fade px-4 py-5">
-                        <h5 class="text-muted py-2">Opis kolegija</h5>
-                        <p class="text-muted">termotehnički pokus tekst.</p>
-                        <p class="text-muted">termotehnički pokus tekst.</p>
-                        <h5 class="text-muted py-2">Obavijesti</h5>
-                        <p class="text-muted">Obavijesti o kolegiju</p>
-                        <h5 class="text-muted py-4">Materijali</h5>
-                        <a class="btn btn-outline-dark" href="https://www.dropbox.com/sh/btj1131xsxag13k/AAA4HDyUf-GjK5laez3qNt8Pa?dl=0" role="button" download>Materijali</a>
-                    </div>
-                </div>        
-              </div>
             </div>
         </div>
 
