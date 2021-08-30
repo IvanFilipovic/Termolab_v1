@@ -9,9 +9,9 @@
         <meta name="Author" content="CodeJuice">
         
         <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="main.css">  
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">   
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -22,11 +22,12 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand"><img src="src/FSBlogo.png"></a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item active px-5 py-2">
+                <li class="nav-item text-center active px-2 py-2">
                     <a class="nav-link" id="stil" href="index.html">TERMOLAB <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item text-center px-2 py-2">
@@ -42,7 +43,7 @@
                     <a class="nav-link" id="stil" href="publikacije.html">Publikacije</a>
                 </li>
                 <li class="nav-item text-center px-2 py-2">
-                  <a class="nav-link" id="stil" href="akreditacije.html">Akreditacije</a>
+                  <a class="nav-link" id="stil" href="akreditacije.html">Akreditacija</a>
               </li>
             </ul>
         </div>
@@ -65,10 +66,31 @@
                         <a href="mailto:damir.dovic@fsb.hr" title="Pošalji E-mail"><i class="fas fa-envelope"></i></a>
                       </div>
                       <div class="px-2" style="float: left;">
-                        <p>Dr. sc. Dović, Damir, dipl. ing.</p>
-                      </div>
-                      <div class="px-2" style="float: left;">
-                        <p>Voditelj Laboratorija</p>
+                        <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">Dr. sc. Dović, Damir, dipl. ing.</button>
+
+                          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="py-3 px-5 text-justify">
+                                  <h4 class="py-3 px-4 text-center">Biografija</h4>
+                                  <div class="row py-3">
+                                    <div class="col-lg-6">
+                                      <img src="src/damir.jpg" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <p>Prof dr. sc. Damir Dović rođen 06.01.1974. Diplomirao na fakultetu strojarstva i brodogradnje 1997. Upisuje 1998. godine magisterij na Kraljevskoj visokoj-tehničkoj školi u Stockholmu gdje je magistrirao 2000. godine. 2001. godine se vrača na fakultet strojarstva i brodogradnje te 2005.godine završava doktorski studij.</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                      <p>Sudjeluje u radu Tehničkog odbora TO 541 ”Sustavi grijanja, ventilacije i klimatizacije u građevinama” Hrvatskog zavoda za norme, član je izvršnog odbora Hrvatske udruge energetskih certifikatora. Član Hrvatske stručno-znanstvene udruge za energetiku, strojarske tehnologije i obnovljive izvore energije. Ćlan je tehničkog odbora CEN/TC 228 - Heating systems in buildings, WG4 - Calculation methods and system performance and evaluation. Član je radne grupe pri EK "Working Group on usability of energy performance of buildings standards".</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                      <p>Sudjelovao u organizaciji međunarodnog poslijediplomskog studija "Sustainable energy engineering" na Fakultetu strojarstva i brodogradnje te organizaciji stručnih seminara iz Termografije i Primjene sunčeve energije za grijanje prostora i potrošne tople vode, konferencije o Termografiji te seminara za Stručno osposobljavanje i obvezno usavršavanje osoba koje provode energetske preglede i/ili energetsko certificiranje. Sudjeluje u radu Stručnih povjerenstava vezanih uz energetsku učinkovitost i energetsku certifikaciju u zgradarstvu pri Ministarstvu graditeljstva i prostornoga uređenja RH. Od 2013.g voditelj je Laboratorija za toplinu i toplinske uređaje (LTTU) Fakulteta strojarstva i brodogradnje. Vodio je postupak akreditacije LTTU pri Hrvatskoj akreditacijskoj agenciji za umjerni laboratorij za osjetnike temperature i ispitni laboratorij za grijalice prostora, kamine i štednjake te sustave ventilacije, klimatizacije i mikroklimu prostora.</p>
+                                      <p>Toplinski aparati, mjerenja u termotehnici i procesnoj tehnici, obnovljivi izvori energije, sunčani sustavi i komponente, energetska učinkovitost, energetska certifikacija zgrada, termografija, kotlovi, peći, grijalice, kamini na biomasu, tlačna oprema. Sudjelovao je u izradi 60-tak strojarskih projekata i studija iz navedenih područja. Autor je 40-tak znanstvenih i stručnih radova, dvaju skripta i 6 priručnika/poglavlja u priručnicima iz područja uporabe sunčeve energije, te recenzent dviju knjiga iz područja termografije i uporabe sunčeve energije u toplovodnim sustavima.</p>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
                     <div style="clear:both;"></div>
@@ -88,7 +110,31 @@
                         <a href="mailto:srecko.svaic@fsb.hr" title="Pošalji E-mail"><i class="fas fa-envelope"></i></a>
                       </div>
                       <div class="px-2" style="float: left;">
-                        <p>Dr. sc. Švaić, Srećko, dipl. ing.</p>
+                        <button type="button" class="btn" data-toggle="modal" data-target=".sr-example-modal-lg">Dr. sc. Švaić, Srećko, dipl. ing.</button>
+
+                          <div class="modal fade sr-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="py-3 px-5 text-justify">
+                                  <h4 class="py-3 px-4 text-center">Biografija</h4>
+                                  <div class="row py-3">
+                                    <div class="col-lg-6">
+                                      <img src="src/srecko.jpg" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <p>Prof. dr. sc. Srećko Švaić, dipl. ing. umirovljeni je profesor Fakulteta strojarstva i brodogradnje Sveučilišta u Zagrebu. Rođen je 8. listopada 1947. godine u Zagrebu. Diplomirao je 1972. na Fakultetu strojarstva i brodogradnje Sveučilišta u Zagrebu, na kojemu je i magistrirao 1979. i doktorirao 1990. godine.</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                      <p>Uz to, završio je brojne programe usavršavanja u tvrtkama i visokoškolskim i istraživačkim ustanovama u inozemstvu. U razdoblju 1972. - 1975. godine bio je razvojni inženjer za kućanske aparate u Elektrotehničkom institutu ‘Rade Končar’ gdje dobiva 3 nagrade E za razvoj novih proizvoda, malih kućanskih aparata. Od 1975. godine do umirovljenja radio je na FSB-u, gdje je najprije bio voditelj Laboratorija za toplinu i toplinske uređaje, a zatim i znanstveni asistent, znanstveni suradnik i docent, viši znanstveni suradnik i izvanredni profesor i, konačno, redoviti profesor. Za svoj rad na razvoju laboratorija i fakulteta nagrađen je malom i velikom medaljom Fakulteta kao i spomen medaljom Sveučilišta u Zagrebu u znak zahvalnosti i priznanja za doprinos razvitku i napretku Sveučilišta u Zagrebu. Kao autor ili suautor objavio je više od 150 znanstvenih i stručnih radova u časopisima i zbornicima radova i sudjelovao u izradi više od 400 studija, elaborata i razvojnih konstrukcija za potrebe gospodarstva. Autor je i koautor po jednog patenta. Bio je voditelj dva tehnička odbora Hrvatskog zavoda za norme a tehnički je ekspert za opremu pod tlakom Hrvatske akreditacijske agencije, Instituta za akreditaciju Makedonije i Slovenske akreditacije. U periodu od 2001. do 2013. godine bio je konzultant na pet projekata financiranih od strane CEI-BAS (Central European Initiative-Business Advisory Programme, Europske banke za obnovu i razvoj). Stručni je savjetnik na izradi pravilnika iz područja opreme pod tlakom i nositelj izrade tehničkih uputa za opremu pod tlakom. U području cjeloživotne izobrazbe osnivač je seminara o opremi pod tlakom, obnovljivim izvorima energije, infracrvenoj termografiji i primjeni programa za proračun opreme pod tlakom te jedan od nositelja izobrazbe i usavršavanja osoba koje provode energetske preglede i energetsko certificiranje zgrada na kojima je i predavač. Uz to, savjetnik je u više hrvatskih proizvođača termotehničke opreme.</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                      <p>Član je upravnog odbora i znanstvenog savjeta međunarodne udruge za kvantitativnu infracrvenu termografiju (QIRT). Do odlaska u mirovinu bio je član mađarske udruge Thermo - Mathe, Austrijskog društva za termografiju (ÖGfTh) i britanskog Udruženja za istraživanje i informiranje u graditeljstvu (BSRIA).  Za svoj dugogodišnji znastveni i stručni rad na području energetike dobio je nagradu Hrvoje Požar.  Predsjednik je Hrvatske sekcije za opremu pod tlakom pri Hrvatskoj stručno-znanstvenoj udruzi za energetiku, strojarske tehnologije i obnovljive izvore energije (HESO) i Hrvatsko-hispanskog društva . Bavi se planinarstvom i jedrenjem a posebno je vezan za Južnu Ameriku. Govori engleski i španjolski jezik, a služi se njemačkim i ruskim jezikom.</p>
+                                    </div>
+                                  </div>                           
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
                   </td>
@@ -107,7 +153,32 @@
                         <a href="mailto:ivan.horvat@fsb.hr" title="Pošalji E-mail"><i class="fas fa-envelope"></i></a>
                       </div>
                       <div class="px-2" style="float: left;">
-                        <p>Dr. sc. Horvat, Ivan, mag.ing.</p>
+                        <button type="button" class="btn" data-toggle="modal" data-target=".iv-example-modal-lg">Dr. sc. Horvat, Ivan, mag.ing.</button>
+
+                        <div class="modal fade iv-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="py-3 px-5 text-justify">
+                                <h4 class="py-3 px-4 text-center">Biografija</h4>
+                                <div class="row py-3">
+                                  <div class="col-lg-6">
+                                    <img src="src/ivan.jpg" class="img-thumbnail">
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <p>Ivan Horvat je rođen 15. lipnja 1990. godine u Varaždinu. Osnovnu školu završio je u Jalžabetu, a srednju (Prvu gimnaziju Varaždin – Prirodoslovno-matematički smjer) u Varaždinu. Akademske godine 2009./10. upisuje preddiplomski sveučilišni studij strojarstva na Fakultetu strojarstva i brodogradnje Sveučilišta u Zagrebu.</p>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <p>Završni rad pod nazivom “Projekt grijanja stambeno-poslovne zgrade” brani u rujnu 2013. te je za ostvareni uspjeh na preddiplomskom djelu studija nagrađen s pohvalom (cum laude). Akademske godine 2013./14. upisuje diplomski sveučilišni studij strojarstva, smjer Procesno-energetski. Diplomski rad pod nazivom “Dinamička simulacija potrošnje primarne energije u stambenoj zgradi” brani u prosincu 2014. godine te je za ostvareni uspjeh na diplomskom djelu studija nagrađen s najvećom pohvalom (summa cum laude). Doktorski rad pod nazivom „Numeričko-eksperimentalna analiza prikladnosti korištenja poljoprivredne biomase u toplovodnim kotlovima“ brani u listopadu 2020. godine.</p>
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <p>U srpnju 2015. godine zapošljava se na radnom mjestu asistenta na Fakultetu strojarstva i brodogradnje, na Zavodu za termodinamiku, toplinsku i procesnu tehniku. Tijekom rada na fakultetu aktivno je sudjelovao ili sudjeluje u nastavi kolegija:  „Termodinamika 1“, „Termodinamika 2“, „Osnove termodinamike“, „Uvod u termodinamiku“, „Gradnja aparata“, „Obnovljivi izvori energije“, „Laboratorijski rad“, „Termotehnički pokus“, „Energetsko certificiranje zgrada“, „Kvantitativna infracrvena termografija“. Također sudjeluje u izvođenju nastave iz „Toplinskih aparata“ i „Solarnih toplovodnih sustava“ na Studiju energetske učinkovitosti i obnovljivih izvora energije u Šibeniku. Autor je više znanstvenih i stručnih radova iz područja energetske učinkovitosti i toplinske ugodnosti. Koautor je jednog  sveučilišnog priručnika. Koautor je Algoritama za izračun energetskog svojstva zgrada te je bio konzultant u izradi nacionalnog računalnog programa za izračun energetskog svojstva zgrada. Dobitnik je nagrade Društva sveučilišnih nastavnika i drugih znanstvenika u Zagrebu za 2016. godinu. </p>
+                                    <p>Kao ispitivač i mjeritelj sudjeluje u radu Laboratorija za toplinu i toplinske uređaje te je aktivno sudjelovao u izradi dokumentacije za potrebe akreditaciju Laboratorija prema HRN EN 17025:2017. Kao istraživač, sudjelovao je u provedbi dva europska znanstvena projekta. Kao predavač, sudjeluje na stručnim seminarima iz područja Energetske učinkovitosti, Tlačne opreme i Termografije. Član je tehničkog odbora HZN/TO 561 Kotlovi, posude pod tlakom, cjevovodi i plinske boce pri Hrvatskom zavodu za norme.Govori i piše engleski jezik, a služi se njemačkim jezikom.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                   </td>
                 </tr>
@@ -118,7 +189,30 @@
                         <a href="mailto:petar.filipovic@fsb.hr" title="Pošalji E-mail"><i class="fas fa-envelope"></i></a>
                       </div>
                       <div class="px-2" style="float: left;">
-                        <p>Filipović, Petar, mag.ing.,</p>
+                        <button type="button" class="btn" data-toggle="modal" data-target=".pr-example-modal-lg">Filipović, Petar, mag.ing.</button>
+
+                        <div class="modal fade pr-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="py-3 px-5 text-justify">
+                                <h4 class="py-3 px-4 text-center">Biografija</h4>
+                                <div class="row py-3">
+                                <div class="col-lg-6"><img src="src/petar.jpg" class="img-thumbnail"></div>
+                                <div class="col-lg-6">
+                                  <p>Petar Filipović je rođen 28. lipnja 1992. godine u Zagrebu. Osnovnu školu Davorina Trstenjaka završio je u Zagrebu kao i srednju školu, Tehnička škola Ruđer Bošković. Akademske godine 2011./12. upisuje preddiplomski sveučilišni studij strojarstva na Fakultetu strojarstva i brodogradnje Sveučilišta u Zagrebu.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                  <p>Završni rad pod nazivom “Oblikovanje srpastih lopatica aksijalnog ventilatora” brani u ožujku 2016. te je za ostvareni uspjeh na preddiplomskom djelu studija nagrađen s pohvalom (CUM LAUDE). Akademske godine 2015./16. upisuje diplomski sveučilišni studij strojarstva, smjer Procesno-energetski. Diplomski rad pod nazivom “Analiza toplinskih karakteristika polimernog solarnog kolektora” brani u prosincu 2017. godine te je za ostvareni uspjeh na diplomskom djelu studija nagrađen s najvećom pohvalom (SUMMA CUM LAUDE) i Medaljom Fakulteta strojarstva i brodogradnje za ostvaren izvanredan uspjeh u studiju. Također, za ostvareni izvrstan uspje u cjelokupnom studiranju dobiva nagradu koje dodjeljuje Hrvatsko energetsko društvo, Zaklada Hrvoje Požar. Akademske godine 2017./18. upisuje poslijediplomski studij, smjer Procesno-energetski.</p>
+                                </div>
+                                <div class="col-lg-12">
+                                  <p>Petar Filipović je rođen 28. lipnja 1992. godine u Zagrebu. Osnovnu školu Davorina Trstenjaka završio je u Zagrebu kao i srednju školu, Tehnička škola Ruđer Bošković. Akademske godine 2011./12. upisuje preddiplomski sveučilišni studij strojarstva na Fakultetu strojarstva i brodogradnje Sveučilišta u Zagrebu. Završni rad pod nazivom “Oblikovanje srpastih lopatica aksijalnog ventilatora” brani u ožujku 2016. te je za ostvareni uspjeh na preddiplomskom djelu studija nagrađen s pohvalom (CUM LAUDE). Akademske godine 2015./16. upisuje diplomski sveučilišni studij strojarstva, smjer Procesno-energetski. Diplomski rad pod nazivom “Analiza toplinskih karakteristika polimernog solarnog kolektora” brani u prosincu 2017. godine te je za ostvareni uspjeh na diplomskom djelu studija nagrađen s najvećom pohvalom (SUMMA CUM LAUDE) i Medaljom Fakulteta strojarstva i brodogradnje za ostvaren izvanredan uspjeh u studiju. Također, za ostvareni izvrstan uspje u cjelokupnom studiranju dobiva nagradu koje dodjeljuje Hrvatsko energetsko društvo, Zaklada Hrvoje Požar. Akademske godine 2017./18. upisuje poslijediplomski studij, smjer Procesno-energetski.</p>
+                                  <p>Od ožujka 2018. radi na Katedri za toplinsku i procesnu tehniku kao stručni suradnik na IRI projektu „Razvoj sustava grijanja s višenamjenskim solarnim kolektorom (VSK)“ u sklopu kojeg je i objavio rad u Q1 časopisu. Uz taj rad, objavio je i nekoliko konferencijskih radova s međunarodnom recenzijom Nadalje, sudjeluje u radu Laboratorija za toplinu i toplinske uređaje na slijedećim aktivnostima: umjeravanja, ispitivanja, izrada elaborata i studija, organizacija stručnih skupova i seminara. Također sudjeluje i na CEN-CE projektu čiji je zadatak izrada proračunskih procedura za određivanje energetskog svojstva zgrada. Od siječnja 2020. zapošljava se na radnom mjestu asistenta pri Katedri za toplinsku i procesnu tehniku, gdje sudjeluje u nastavnim aktivnostima na kolegijima „Gradnja aparata“, „Obnovljivi izvori energije“, „Laboratorijski rad“, „Kvantitativna infracrvena termografija“. Također sudjeluje u izvođenju nastave iz „Toplinskih aparata“ i „Solarnih toplovodnih sustava“ na Studiju energetske učinkovitosti i obnovljivih izvora energije u Šibeniku.</p>
+                                  <p>Od prve godine studija pa do njegova završetka, aktivno sudjeluje u aktivnostima Veslačkog kluba FSB-a. Služi se engleskim jezikom u govoru i pismu</p>
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </td>
@@ -137,7 +231,14 @@
                         <a href="mailto:badzek.zeljko@fsb.hr" title="Pošalji E-mail"><i class="fas fa-envelope"></i></a>
                       </div>
                       <div class="px-2" style="float: left;">
-                        <p>Badžek, Željko</p>
+                        <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">Badžek, Željko</button>
+
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </td>

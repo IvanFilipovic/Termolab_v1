@@ -9,8 +9,7 @@
         <meta name="Author" content="CodeJuice">
         
         <link rel="stylesheet" href="css.css">
-        <link rel="stylesheet" href="main.css">  
-        <link rel="stylesheet" href="slider.css">
+        <link rel="stylesheet" href="main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -28,39 +27,17 @@
               $("#myTab2 li:eq(0) a").tab('show');
             });
         </script>
-        <script>
-            $(document).ready(function(){
-            $('.customer-logos').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 1900,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-            }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-          </script>
+        
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand"><img src="src/FSBlogo.png"></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                    <li class="nav-item active px-5 py-2">
+                    <li class="nav-item text-center active px-2 py-2">
                         <a class="nav-link" id="stil" href="index.html">TERMOLAB <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item text-center px-2 py-2">
@@ -76,7 +53,7 @@
                         <a class="nav-link" id="stil" href="publikacije.html">Publikacije</a>
                     </li>
                     <li class="nav-item text-center px-2 py-2">
-                      <a class="nav-link" id="stil" href="akreditacije.html">Akreditacije</a>
+                      <a class="nav-link" id="stil" href="akreditacije.html">Akreditacija</a>
                   </li>
                 </ul>
             </div>
@@ -94,14 +71,14 @@
                             <a href="#two" class="nav-link" data-toggle="tab">Stručni projekti</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#tri" class="nav-link" data-toggle="tab">Konferencije i edukacije</a>
+                            <a href="#tri" class="nav-link" data-toggle="tab">Konferencije i seminari</a>
                         </li> 
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane fade" id="one">
                             <div class="row d-flex justify-content-center py-3">
                                 <div class="col-lg-12 py-3">
-                                    <table class="table table-striped table-primary">
+                                    <table class="table table-hover">
                                         <thead class="text-center">
                                             <th style="width: 40%;" scope="col">Naziv</th>
                                             <th style="width: 40%;" scope="col">Suradnici</th>
@@ -157,6 +134,8 @@
                                                     <td class="py-2">FSB: Srećko Švaić (GI), Mladen Andrassy, Damir Dović</td>
                                                     <td class="py-2">1996-2002</td>
                                             </tr>
+
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div> 
@@ -171,13 +150,16 @@
                                   <li class="nav-item">
                                       <a href="#due" class="nav-link" data-toggle="tab">Projekti i studije</a>
                                   </li>
+                                  <li class="nav-item">
+                                      <a href="#tre" class="nav-link" data-toggle="tab">Popis partnera</a>
+                                  </li>
                                 </ul>
                             </div>
                             <div class="tab-content">
                                 <div class="tab-pane fade" id="uno">
                                     <div class="row d-flex justify-content-center py-3">
                                         <div class="col-lg-12 py-3">
-                                            <table class="table table-striped table-primary">
+                                            <table class="table table-hover">
                                                 <thead class="text-center">
                                                     <th style="width: 30%;" scope="col">Naziv</th>
                                                     <th style="width: 25%;" scope="col">Investitori</th>
@@ -229,7 +211,7 @@
                                 <div class="tab-pane fade" id="due">
                                     <div class="row d-flex justify-content-center py-3">
                                         <div class="col-lg-12 py-3">
-                                            <table class="table table-striped table-primary">
+                                            <table class="table table-hover">
                                                 <thead class="text-center">
                                                     <th style="width: 30%;" scope="col">Naziv</th>
                                                     <th style="width: 25%;" scope="col">Investitori</th>
@@ -278,25 +260,34 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="tab-pane fade" id="tre">
+                                    <div class="row d-flex justify-content-center py-3">
+                                        <div class="col-lg-12 d-flex justify-content-center py-3">
+                                            <div class="list-group">
+                                                <a href="https://www.cen.eu/Pages/default.aspx" class="list-group-item list-group-item-action text-center">Europski odbor za normizaciju (CEN)</a>
+                                                <a href="https://www.centrometal.hr/" class="list-group-item list-group-item-action text-center">Centrometal d.o.o.</a>
+                                                <a href="https://mgipu.gov.hr/" class="list-group-item list-group-item-action text-center">Ministarstvo prostornoga uređenja, graditeljstva i državne imovine</a>
+                                                <a href="https://www.medical-intertrade.hr/en/" class="list-group-item list-group-item-action text-center">Medical Intertrade d.o.o.</a>
+                                                <a href="https://kfk.hr/" class="list-group-item list-group-item-action text-center">KFK d.o.o.</a>
+                                                <a href="https://www.klimaoprema.hr" class="list-group-item list-group-item-action text-center">Klima oprema</a>
+                                                <a href="https://proklima.hr/hr/naslovnica/" class="list-group-item list-group-item-action text-center">Pro-Klima d.o.o.</a>
+                                                <a href="https://aandb.hr/" class="list-group-item list-group-item-action text-center">A&B d.o.o.</a>
+                                                <a href="http://www.eihp.hr/?lang=en" class="list-group-item list-group-item-action text-center">Energetski institute Hrvoje Požar</a>
+                                                <a href="https://senko.hr/" class="list-group-item list-group-item-action text-center">SENKO d.o.o.</a>
+                                                <a href="https://www.vetropack.hr/en/" class="list-group-item list-group-item-action text-center">Vetropack Straža d.d.</a>
+                                                <a href="https://lipovica.hr/hr/" class="list-group-item list-group-item-action text-center">Lipovica d.o.o.</a>
+                                                <a href="http://www.itrs.hr/" class="list-group-item list-group-item-action text-center">ITRS d.o.o.</a>
+                                                <a href="http://www.ekoventinfo.hr/" class="list-group-item list-group-item-action text-center">EKOVENT - INFO d.o.o.</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-12">
-                                <h2>Partneri</h2>
-                                <section class="customer-logos slider">
-                                <div class="slide"><img src="src/EIHP.png"></div>
-                                <div class="slide"><img src="src/KFK.png"></div>
-                                <div class="slide"><img src="src/HT.png"></div>
-                                <div class="slide"><img src="src/HRT.png"></div>
-                                <div class="slide"><img src="src/pliva.png"></div>
-                                <div class="slide"><img src="src/hep.jpg"></div>
-                                <div class="slide"><img src="src/KO.png"></div>
-                                <div class="slide"><img src="src/KB.png"></div>
-                                </section>
-                            </div>
+                        </div>
                         </div>
                         <div class="tab-pane fade" id="tri">
                             <div class="row d-flex justify-content-center py-3">
                                 <div class="col-lg-12 py-3">
-                                    <table class="table table-striped table-primary">
+                                    <table class="table table-hover">
                                         <thead class="text-center">
                                             <th style="width: 40%;" scope="col">Naziv</th>
                                             <th style="width: 40%;" scope="col">Organizator</th>
