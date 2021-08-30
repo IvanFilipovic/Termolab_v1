@@ -15,44 +15,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
         <title>TermoLab</title>
-        <script>
-          const constraints = {
-              name: {
-                  presence: { allowEmpty: false }
-              },
-              email: {
-                  presence: { allowEmpty: false },
-                  email: true
-              },
-              message: {
-                  presence: { allowEmpty: false }
-              }
-          };
-       
-          const form = document.getElementById('contact-form');
-       
-          form.addEventListener('submit', function (event) {
-            const formValues = {
-                name: form.elements.name.value,
-                email: form.elements.email.value,
-                message: form.elements.message.value
-            };
-       
-            const errors = validate(formValues, constraints);
-       
-            if (errors) {
-              event.preventDefault();
-              const errorMessage = Object
-                  .values(errors)
-                  .map(function (fieldValues) { return fieldValues.join(', ')})
-                  .join("\n");
-       
-              alert(errorMessage);
-            }
-          }, false);
-       </script>
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -188,20 +151,19 @@
                     <h6 class="text-uppercase font-weight-bold mb-4">Kontaktirajte nas</h6>
                     <div class="form-group">
                         <form>
-                            <fieldset method="POST" action="form.php" class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Unesite email" name="email">
+                            <fieldset action="form.php" method="post" class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Unesite email" name="email">
                             </fieldset>
                             <fieldset class="form-group">
-                                <textarea class="form-control" id="exampleMessage" placeholder="Poruka" name="message"></textarea>
+                                <textarea type="text" class="form-control" id="message" placeholder="Poruka" name="message"></textarea>
                             </fieldset>
                             <fieldset class="form-group text-xs-right">
-                                <button style="color: honeydew;" type="submit" class="btn btn-secondary-outline btn-lg" id="up">Pošalji</button>
+                                <button style="color: honeydew;" type="submit" class="btn btn-secondary-outline btn-lg" id="up" value="send">Pošalji</button>
                             </fieldset>
                         </form>
                     </div>
                 </div>
                 </div>
-              
             </div>
             
             <!-- Copyrights -->
