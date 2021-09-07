@@ -1,8 +1,15 @@
+
+
+$desna: #235959;
+
 $theme-colors: (
-  "primary": #2c5467,
+  "primary": $desna,
 );
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
 .main-form  {
     width: auto;

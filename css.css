@@ -9,7 +9,7 @@ hr {
     color: black;
 }
 .navbar{
-    background: linear-gradient(90deg, rgba(55,78,122,1) 0%, rgba(35,89,89,1) 100%);
+    background: linear-gradient(90deg, rgba(55,78,122,1) 0%, #235959 23%);
     font-size: 15px;
 }
 #stil {
@@ -41,11 +41,11 @@ hr {
     border-radius: 0%;
     background-image: url(src/Untitled-2.png);
 	background-repeat:no-repeat; 
-    height: 550px;  
-    object-fit: scale-down;
+    height: 500px;  
+    object-fit: fill;
 }
 footer {
-    background: linear-gradient(90deg, rgba(55,78,122,1) 0%, rgba(35,89,89,1) 100%);
+    background: linear-gradient(90deg, #374e7a 0%, #235959 23%);
 }
 .border-5, .border-w-5 {
     border-width: 5px
@@ -142,4 +142,20 @@ footer .form-control {
 	background-color: #FCB425;
 	border-color: #D59C2B;
 	color: #231F20 !important;
+}
+.link-cro {
+    background-color: white;
+	border-color: white;
+	color: red !important;
+}
+.link-ema {
+    background-color: white;
+	border-color: white;
+	color: #a5a5a5 !important;
+}
+thead {
+    color: aliceblue;
+}
+#myTab {
+    font-size: large;
 }
