@@ -9,7 +9,7 @@ hr {
     color: black;
 }
 .navbar{
-    background: linear-gradient(90deg, rgba(55,78,122,1) 0%, #235959 23%);
+    background: linear-gradient(90deg, rgba(55,78,122,1) 0%, #235959 77%);
     font-size: 15px;
 }
 #stil {
@@ -158,4 +158,15 @@ thead {
 }
 #myTab {
     font-size: large;
+}
+#hrefnav {
+    background-color: rgba(55,78,122,1);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#hrefnav:hover {
+    background-color: #235959;
 }
