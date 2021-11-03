@@ -1,6 +1,7 @@
 * {  
     font-family: 'Open Sans', sans-serif;
     line-height: 1.8em;
+    
 }
 body {
     min-height: 100vh;
@@ -9,7 +10,7 @@ hr {
     color: black;
 }
 .navbar{
-    background: linear-gradient(90deg, rgba(55,78,122,1) 0%, #235959 77%);
+    background: linear-gradient(90deg, #13315C 0%, #0093B8 70%);
     font-size: 15px;
 }
 #stil {
@@ -45,7 +46,7 @@ hr {
     object-fit: fill;
 }
 footer {
-    background: linear-gradient(90deg, #374e7a 0%, #235959 23%);
+    background: linear-gradient(90deg, #13315C 0%, #0093B8 70%);
 }
 .border-5, .border-w-5 {
     border-width: 5px
@@ -81,7 +82,7 @@ em {
     background: #0077B5;
 }
 .social-linkedin:hover, .social-linkedin:focus {
-    background: #005582;
+    background: #13315C;
 }
 .breadcrumb-caret .breadcrumb-item+.breadcrumb-item::before {
     content: '\f0da';
@@ -160,7 +161,7 @@ thead {
     font-size: large;
 }
 #hrefnav {
-    background-color: rgba(55,78,122,1);
+    background-color: #13315C;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -168,5 +169,5 @@ thead {
     display: inline-block;
 }
 #hrefnav:hover {
-    background-color: #235959;
+    background-color: #0083A3;
 }
